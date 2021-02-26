@@ -22,7 +22,7 @@ def screen_info (request):
 def screens_info (request, pk):
     Display = Screens.objects.all()
     Display = Screens.objects.order_by('ScreenName')
-    Screens.objects.get(pk = pk)
+    Display = Screens.objects.get(pk = pk)
     return render(request, 'screens/screeninfo.html', {'Wall': Display})
 
 
