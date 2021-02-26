@@ -1,0 +1,35 @@
+h1 a, h2 a {
+    color: #C25100;
+    font-family: 'Calibri';
+}
+h1 {
+    color: #304050;
+    font-family: 'Calibri';
+}
+
+
+div {
+    color: #5070A0;
+    font-family: 'Arial';
+}
+body {
+    padding-left: 35px;
+}
+
+.page-header {
+    background-color: #E0E0F0;
+    margin-top: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+.Screen-Infos {
+    color: #305080;
+    font-family: 'Arial';
+    font-size: 80%;
+}
+
+.content_container {
+    background-color: #FAFAFF;
+    margin-top: 0;
+    padding: 10px 10px 10px 10px;
+}

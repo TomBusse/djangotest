@@ -24,4 +24,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     path('locations/', include('locations.urls')),
     path('screens/', include('screens.urls')),
+    path('', include('locations.urls')),
+    #path('post/new/', views.newscreen, name='newscreen'),
 ]

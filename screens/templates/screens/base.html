@@ -1,4 +1,3 @@
-{% extends 'screens/base.html' %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -15,19 +14,19 @@
 
 <body>
 <div class="page-header">
-    <h1>Das ist die Seite SCREENS in der INDEX.HTML</h1>
+    <h1>Dies ist die Seite SCREENS in der INDEX.HTML</h1>
 </div>
 
 
 {{ Wall }}
-{% block content %}
-    {% for Wall in Wall %}
-        <div class="Screen-List">
-            <h2><a href="% url 'screens_view' pk=Wall.pk %">{{ Wall.ScreenCode }}</a></h2>
-            <p>Screen Name : {{ Wall.ScreenName }} - {{ Wall.pk }} </p>
-            <p class="Screen-Infos"> Screen Infos: Width={{ Wall.ScreenWidth}} Height={{ Wall.ScreenHeight }} XPitch={{ Wall.XPitch }} YPitch={{ Wall.YPitch }} IsMobile={{ Wall.IsMobile }} Location Code={{ Wall.LocationCode }} <hr></p>
+<div class="content_container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            <h2>Screen Code : <a href="% url 'screens_view' pk=Wall.pk %">{{ Wall.ScreenCode }}</a></h2>
+            {% endblock %}
         </div>
-    {% endfor %}
-{% endblock %}
+    </div>
+</div>
 </body>
 </html>

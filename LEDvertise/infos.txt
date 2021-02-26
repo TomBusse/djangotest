@@ -1,0 +1,5 @@
+Publish mit Git:
+    git remote set-url origin https://github.com/TomBusse/djangotest.git
+    git push --set-upstream origin main
+    User: TomBusse
+    PW: volle Länge und mit kleinem 'B'
