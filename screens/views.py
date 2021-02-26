@@ -12,12 +12,19 @@ def screens_view (request):
 #    Screens.objects.get(pk=pk)
     return render(request, 'screens/index.html', {'Wall': Display})
 
-def screens_info (request, pk):
-    Screens.objects.get(pk=pk)
+
+def screen_info (request):
     Display = Screens.objects.all()
     Display = Screens.objects.order_by('ScreenName')
-    Screens.objects.get(pk=pk)
+#    Screens.objects.get(pk = pk)
+    return render(request, 'screens/index.html', {'Wall': Display})
+
+def screens_info (request, pk):
+    Display = Screens.objects.all()
+    Display = Screens.objects.order_by('ScreenName')
+    Screens.objects.get(pk = pk)
     return render(request, 'screens/screeninfo.html', {'Wall': Display})
+
 
 
 def new_screens (request):
