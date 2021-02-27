@@ -1,13 +1,23 @@
+{% load static %}
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/screens.css' %}">
+    </head>
 
+ <body>
     <div>
-    <h2>Edit Screens</h2>
-    <a class="page-header"> </a>
-        <h1>Dies ist die Seite SCREENS in der BASE.HTML</h1>
-        <p>Screen Code: {{ actual_screen.ScreenCode }}</p>
-        <p>Screen Name: {{ actual_screen.ScreenName }}</p>
-        <p>Screen Width: {{ actual_screen.ScreenWidth }}</p>
-        <p{% if actual_screen.IsMobile %} class="text-danger"{% endif %}>Mobile Wand: {{ actual_screen.IsMobile }}</p>
-        <p>Wand ist mobil: {{ actual_screen.IsMobile }}</p>
+        <a href="{% url 'screens:renew_screens' pk=10 %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <h2>Edit Screens</h2>
+        <a class="page-header"> </a>
+            <h1>Dies ist die Seite SCREENS in der BASE.HTML</h1>
+            <p>Screen Code: {{ actual_screen.ScreenCode }}</p>
+            <p>Screen Name: {{ actual_screen.ScreenName }}</p>
+            <p>Screen Width: {{ actual_screen.ScreenWidth }}</p>
+            <p{% if actual_screen.IsMobile %} class="text-danger"{% endif %}>Mobile Wand: {{ actual_screen.IsMobile }}</p>
+            <p>Wand ist mobil: {{ actual_screen.IsMobile }}</p>
 
     </div>
 
@@ -23,3 +33,4 @@
         <input id="team_name" type="text" name="name_field" value="Default name for team.">
         <input type="submit" value="OKEY DOKE">
     </form>
+ </body>

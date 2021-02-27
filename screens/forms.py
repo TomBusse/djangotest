@@ -2,6 +2,7 @@ from django import forms
 import datetime
 
 from django import forms
+from .models import Screens
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 
@@ -13,7 +14,7 @@ class edit_screens_form(forms.ModelForm):
         model = Screens
         renewal_date = forms.DateField(help_text="Enter a date between now and 4 weeks (default 3).", localize=True)
         textfield01 = forms.CharField(help_text="Enter any Text here", localize=True )
-        fields = ('ScreenCode','ScreenName','ScreenWidth','ScreenHeight')
+        fields = ('ScreenCode','ScreenName','ScreenWidth','ScreenHeight','XPitch','YPitch','XRes','YRes','IsMobile','LocationCode','CreatorCode','CreationTime','InstallationTeam')
 
 
     def clean_renewal_date(self):

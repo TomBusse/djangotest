@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .forms import edit_screens_form
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -48,15 +48,18 @@ def renew_screens (request, pk):
         # Check if the form is valid:
         if form.is_valid():
             # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
-            actual_screen.due_back = form.cleaned_data['ScreenName']
+            #actual_screen.due_back = form.cleaned_data['ScreenName']
+            print("Wir sind in der Post-Methode bei Screen. Form is valid", pk)
+            actual_screen.CreatorCode="Tom ist toll"
+            print("actual_screen saved as:", actual_screen.ScreenName,"Creator:", actual_screen.CreatorCode)
             actual_screen.save()
-
             # redirect to a new URL:
-            return HttpResponseRedirect(reverse('screens:screens_view'))
+            # return HttpResponseRedirect(reverse('screens:screens_view'))
+            return redirect('screens:screens_info', pk=actual_screen.pk)
 
     # If this is a GET (or any other method) create the default form.
     else:
-        print("Wir sind in der Get-Methode bei Screen",pk)
+        print("Wir sind in der Get-Methode bei Screen. Form is not valid",pk)
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
         form = edit_screens_form(initial={'renewal_date': proposed_renewal_date})
 
