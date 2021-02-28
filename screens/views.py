@@ -9,17 +9,8 @@ import datetime
 from screens.models import Screens
 import cgi
 def screens_view (request):
-#    Screens.objects.get(pk=pk)
     Display = Screens.objects.all()
     Display = Screens.objects.order_by('ScreenName')
-#    Screens.objects.get(pk=pk)
-    return render(request, 'screens/index.html', {'Wall': Display})
-
-
-def screen_info (request):
-    Display = Screens.objects.all()
-    Display = Screens.objects.order_by('ScreenName')
-#    Screens.objects.get(pk = pk)
     return render(request, 'screens/index.html', {'Wall': Display})
 
 def screens_info (request, pk):

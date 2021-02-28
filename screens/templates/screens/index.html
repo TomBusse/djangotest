@@ -23,7 +23,8 @@
 {% block content %}
     {% for Wall in Wall %}
         <div class="Screen-List">
-            <h2><a href="% url 'screens_view' pk=Wall.pk %">{{ Wall.ScreenCode }}</a></h2>
+            <a>INDEX--------------------------------</a>
+            <h2><a href="{% url 'screens:screens_info' pk=Wall.pk %}">{{ Wall.ScreenCode }}</a></h2>
             <p>Screen Name : {{ Wall.ScreenName }} - {{ Wall.pk }} </p>
             <p class="Screen-Infos"> Screen Infos: Width={{ Wall.ScreenWidth}} Height={{ Wall.ScreenHeight }} XPitch={{ Wall.XPitch }} YPitch={{ Wall.YPitch }} IsMobile={{ Wall.IsMobile }} Location Code={{ Wall.LocationCode }} <hr></p>
         </div>
