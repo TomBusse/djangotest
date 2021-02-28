@@ -52,7 +52,14 @@ def renew_screens (request, pk):
     else:
         print("Wir sind in der Get-Methode bei Screen. Form is not valid",pk)
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
-        form = edit_screens_form(initial={'renewal_date': proposed_renewal_date})
+        #form = edit_screens_form(initial={'renewal_date': proposed_renewal_date})
+        form = edit_screens_form(initial={'ScreenName': actual_screen.ScreenName,'ScreenCode': actual_screen.ScreenCode,
+                                          'ScreenWidth': actual_screen.ScreenWidth ,'ScreenHeight': actual_screen.ScreenHeight,
+                                          'XPitch': actual_screen.XPitch, 'YPitch': actual_screen.YPitch, 'XRes': actual_screen.XRes,
+                                          'YRes': actual_screen.YRes, 'IsMobile': actual_screen.IsMobile, 'LocationCode': actual_screen.LocationCode,
+                                          'CreatorCode': actual_screen.CreatorCode, 'CreationTime': actual_screen.CreationTime,
+                                          'InstallationTeam': actual_screen.InstallationTeam})
+
 
     context = {
         'form': form,
