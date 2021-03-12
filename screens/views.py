@@ -16,7 +16,7 @@ def screens_view (request):
 def screens_info (request, pk):
     Display = Screens.objects.all()
     Display = Screens.objects.order_by('ScreenName')
-    Display = Screens.objects.get(pk = pk)
+    Display = Screens.objects.get(pk= pk)
     return render(request, 'screens/screeninfo.html', {'Wall': Display})
 
 def edit_screens (request):
@@ -30,6 +30,7 @@ def edit_screens (request):
 
 def renew_screens (request, pk):
     actual_screen = get_object_or_404(Screens, pk=pk)
+    Display= Screens.objects.get (pk= pk)
     # If this is a POST request then process the Form data
     if request.method == 'POST':
         # Create a form instance and populate it with data from the request (binding):
@@ -37,16 +38,27 @@ def renew_screens (request, pk):
         print("Wir sind in der Post-Methode bei Screen",pk)
 
         # Check if the form is valid:
+
         if form.is_valid():
             # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
             #actual_screen.due_back = form.cleaned_data['ScreenName']
-            print("Wir sind in der Post-Methode bei Screen. Form is valid", pk)
+
             actual_screen.CreatorCode="Tom ist toll"
             print("actual_screen saved as:", actual_screen.ScreenName,"Creator:", actual_screen.CreatorCode)
-            actual_screen.save()
+            #save_screen= Screens(ScreenName='Test', ScreenCode='Test',ScreenWidth= 10, ScreenHeight= 11, XPitch= 12, YPitch= 13, XRes= 14, YRes= 15)
+            save_screen = Screens(ScreenName= actual_screen.ScreenName, ScreenCode= actual_screen.ScreenCode, ScreenWidth= actual_screen.ScreenWidth, ScreenHeight= actual_screen.ScreenHeight, XPitch=12,
+                                  YPitch=13, XRes=14, YRes=15)
+            Display.ScreenName= 'AABBCCDD'
+                #actual_screen.ScreenWidth
+            Display.save()
+            success= actual_screen.save()
+            save_screen.save()
+            print("Wir sind in der Post-Methode bei Screen. Form is valid", pk, "Success=", success)
             # redirect to a new URL:
             # return HttpResponseRedirect(reverse('screens:screens_view'))
             return redirect('screens:screens_info', pk=actual_screen.pk)
+        else:
+            print("Wir sind in der Post-Methode bei Screen. Form is valid", pk)
 
     # If this is a GET (or any other method) create the default form.
     else:
@@ -73,4 +85,4 @@ def renew_screens (request, pk):
 
 def new_screens (request):
     form = postscreen()
-    return render(request, 'screens/base.html', {'form': form})
+    return render(request, 'screens/main.html', {'form': form})

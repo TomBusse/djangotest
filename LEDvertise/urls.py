@@ -22,8 +22,10 @@ from locations.views import locations_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    path('main/', include('main.urls')),
     path('locations/', include('locations.urls')),
     path('screens/', include('screens.urls')),
+    path('mains/', include('screens.urls')),
     path('', include('locations.urls')),
     #path('post/new/', views.newscreen, name='newscreen'),
 ]

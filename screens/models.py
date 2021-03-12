@@ -5,18 +5,18 @@ from django.utils import timezone
 
 
 class Screens(models.Model):
-    ScreenCode = models.SlugField(max_length=20, db_index=True, unique=True)
-    ScreenName = models.CharField(max_length=50, db_index=True, unique=True)
-    ScreenWidth = models.IntegerField()                                             # Display width in mm
-    ScreenHeight = models.IntegerField()                                            # Display height in mm
-    XPitch = models.IntegerField()                                                  # Pitch in 1/10mm
-    YPitch = models.IntegerField()                                                  # Pitch in 1/10mm
+    ScreenCode = models.SlugField(max_length=20, db_index=True)
+    ScreenName = models.CharField(max_length=50, db_index=True)
+    ScreenWidth = models.IntegerField(null=False)                                   # Display width in mm
+    ScreenHeight = models.IntegerField(null=False)                                  # Display height in mm
+    XPitch = models.IntegerField(null=False)                                        # Pitch in 1/10mm
+    YPitch = models.IntegerField(null=False)                                        # Pitch in 1/10mm
     XRes = models.IntegerField()                                                    # X-Resolution in Pixels
     YRes = models.IntegerField()                                                    # Y-Resolution in Pixels
     IsMobile = models.BooleanField(default=False)                                   # Is the screen mobile or fixed installed?
     LocationCode = models.SlugField(max_length=20, db_index=True, null=True)        # Code of the Locations table, where the screen is
     CreatorCode = models.SlugField(max_length=20, db_index=True, null=True)         # Person who created this entry
-    CreationTime = models.DateTimeField(default=timezone.now())                             # Date and time of data entry creation
+    CreationTime = models.DateTimeField(default=timezone.now())                     # Date and time of data entry creation
     InstallationTeam = models.SlugField(max_length=20, db_index=True, null=True)    # Team that built the screen
 
 

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'screens',
     'locations',
     'users',
+    'main',
 ]
 
 MIDDLEWARE = [
