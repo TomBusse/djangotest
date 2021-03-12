@@ -10,18 +10,41 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
     <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <title>Das ist die Seite MAIN in der MAIN.HTML</title>
+    <title>LEDvertise</title>
 </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-    <body>
+<body>
+    <div class="Aurelius-Logo">
+        <img src="{% static 'logo.svg' %}" id="logo" class="Aurelius-Logo-01">
+    </div>
 
+
+    </div>
     <ul class="menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#s1">Menu 1</a>
+        <li><a href="#s1">Screen</a>
+            <ul class="submenu">
+                <li><a href="/screens">Screens</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Positions</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s2">Content</a>
+            <ul class="submenu">
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">Submenu c</a></li>
+                <li><a href="#">Submenu d</a></li>
+                <li><a href="#">Submenu e</a></li>
+                <li><a href="#">Submenu f</a></li>
+                <li><a href="#">Submenu g</a></li>
+                <li><a href="#">Submenu h</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">User</a>
             <ul class="submenu">
                 <li><a href="#">Submenu a</a></li>
                 <li><a href="#">Submenu b</a></li>
@@ -34,35 +57,9 @@
             </ul>
         </li>
 
-        <li class="active"><a href="#s2">Menu 2</a>
-            <ul class="submenu">
-                <li><a href="#">Submenu a</a></li>
-                <li><a href="#">Submenu b</a></li>
-                <li><a href="#">Submenu c</a></li>
-                <li><a href="#">Submenu d</a></li>
-                <li><a href="#">Submenu e</a></li>
-                <li><a href="#">Submenu f</a></li>
-                <li><a href="#">Submenu g</a></li>
-                <li><a href="#">Submenu h</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Menu 3</a>
-            <ul class="submenu">
-                <li><a href="#">Submenu a</a></li>
-                <li><a href="#">Submenu b</a></li>
-                <li><a href="#">Submenu c</a></li>
-                <li><a href="#">Submenu d</a></li>
-                <li><a href="#">Submenu e</a></li>
-                <li><a href="#">Submenu f</a></li>
-                <li><a href="#">Submenu g</a></li>
-                <li><a href="#">Submenu h</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Menu 4</a></li>
-        <li><a href="https://www.script-tutorials.com/whirling-dropdown-menu/">Back to tutorial</a></li>
+        <li><a href="#">LogIn</a></li>
+        <li class="Aurelius"><a href="https://www.aurelius-bird.de/">Aurelius Bird®</a></li>
     </ul>
 
-    </body>
+</body>
 </html>
