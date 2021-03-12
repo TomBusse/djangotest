@@ -18,8 +18,12 @@
         <img src="{% static 'logo.svg' %}" id="logo" class="Aurelius-Logo-01">
     </div>
 
-
+    <div class="VideoMainScreen">
+        <video src="{% static 'LEDvertise®_357.mp4' %}" id="LEDvertise®_357" class="VideoMainScreen01"></video>
     </div>
+
+
+
     <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#s1">Screen</a>
@@ -35,19 +39,13 @@
             <ul class="submenu">
                 <li><a href="#">Media</a></li>
                 <li><a href="#">Playlists</a></li>
-                <li><a href="#">Submenu c</a></li>
-                <li><a href="#">Submenu d</a></li>
-                <li><a href="#">Submenu e</a></li>
-                <li><a href="#">Submenu f</a></li>
-                <li><a href="#">Submenu g</a></li>
-                <li><a href="#">Submenu h</a></li>
             </ul>
         </li>
 
         <li><a href="#">User</a>
             <ul class="submenu">
-                <li><a href="#">Submenu a</a></li>
-                <li><a href="#">Submenu b</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Groups</a></li>
                 <li><a href="#">Submenu c</a></li>
                 <li><a href="#">Submenu d</a></li>
                 <li><a href="#">Submenu e</a></li>
@@ -61,5 +59,21 @@
         <li class="Aurelius"><a href="https://www.aurelius-bird.de/">Aurelius Bird®</a></li>
     </ul>
 
+
+    <canvas id="HeadField" width="1920" height="1000"
+    style="border:0px solid #101010;">
+    </canvas>
+    <script>
+    var c=document.getElementById("HeadField");
+    var ctx=c.getContext("2d");
+    ctx.fillStyle="#202020";
+    ctx.fillRect(0,0,screen.width,1000);
+    </script>
+
+<h2 class="IntroText01">Hallo Marc, Willkommen in Arnsberg</h2>
+
 </body>
 </html>
+
+
+
