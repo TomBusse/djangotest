@@ -9,7 +9,7 @@ def locations_view (request):
 
 def location_create_view (request):
     form = LocationForm(request.POST or None)
-    validformcode = form.is_valid()
+
     if form.is_valid():
         form.save()
     else:

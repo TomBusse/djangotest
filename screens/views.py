@@ -34,7 +34,7 @@ def renew_screens (request, pk):
     # If this is a POST request then process the Form data
     if request.method == 'POST':
         # Create a form instance and populate it with data from the request (binding):
-        form = edit_screens_form(request.POST)
+        form = edit_screens_form(request.POST or None)
         print("Wir sind in der Post-Methode bei Screen",pk)
 
         # Check if the form is valid:
@@ -51,6 +51,7 @@ def renew_screens (request, pk):
             Display.ScreenName= 'AABBCCDD'
                 #actual_screen.ScreenWidth
             Display.save()
+            form.save()
             success= actual_screen.save()
             save_screen.save()
             print("Wir sind in der Post-Methode bei Screen. Form is valid", pk, "Success=", success)

@@ -17,7 +17,6 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include, path
 
-from locations.views import locations_view
 #from screens.views import screens_view
 
 urlpatterns = [
@@ -25,7 +24,7 @@ urlpatterns = [
     path('main/', include('main.urls')),
     path('locations/', include('locations.urls')),
     path('screens/', include('screens.urls')),
-    path('mains/', include('screens.urls')),
-    path('', include('locations.urls')),
+    path('', include('main.urls')),
+    path('locations/create_location', include('locations.urls')),
     #path('post/new/', views.newscreen, name='newscreen'),
 ]
