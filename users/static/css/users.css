@@ -15,20 +15,26 @@
 }
 .UserData {
 margin: 5px 5px 5px 5px;
-padding: 10px 10px 10px 20px;
+padding: 20px 5px 5px 20px;
 border-width: 2px;
 border-style: none;
 border-color: #A0A0A0;
-width: 75%;
+width: 80%;
 background-color: #E0E0E0;
 
 }
 .UserData td {
     font-family: "Calibri";
     font-size: 100%;
-    color: #00B030;
+    color: #009030;
     padding: 5px;
     float: left;
+    width: 24%;
+    border-collapse: collapse;
+    border: 0px solid black;
+    padding: 15px,5px,5px,25px;
+    text-align: left;
+    border-spacing: 5px;
 }
 
 .Table {
@@ -36,14 +42,6 @@ background-color: #E0E0E0;
     border-collapse: collapse;
     border: 0px solid black;
     padding: 5px;
-    text-align: left;
-    border-spacing: 5px;
-}
-.Table td {
-    width: 15%;
-    border-collapse: collapse;
-    border: 0px solid black;
-    padding: 5px,5px,5px,25px;
     text-align: left;
     border-spacing: 5px;
 }

@@ -29,8 +29,9 @@
                 <h3 class="Page-H3"> {{ Users_Headline }} </h3> <!-- Daten aus der users.views-->
             </div>
             <br>
-<!--            <form method='POST'> {% csrf_token %}-->
-<!--                {{ form.as_p }} -->
+<!--            <form method='POST'> {% csrf_token %}
+                {{ form.as_p }}
+-->
 
                 <form action="" method='POST'> {% csrf_token %}
                     <div class="UserData">
@@ -42,8 +43,16 @@
                             <tr>
                                 <td>Vorname</td>
                                 <td id="GivenName" class="GivenName"> {{ form.GivenName }} </td>
+                                <td>Mittelname</td>
+                                <td id="MiddleName" class="MiddleName"> {{ form.MiddleName }} </td>
+                            </tr>
+                            <tr>
                                 <td>Nachname</td>
-                                <td id="SurName" class="Surname"> {{ form.Street }} </td>
+                                <td id="SurName" class="Surname"> {{ form.SurName }} </td>
+                            </tr>
+                            <tr>
+                                <td>Straße</td>
+                                <td id="Street" class="Street"> {{ form.Street }} </td>
                             </tr>
                             <tr>
                                 <td>PLZ</td>
@@ -73,7 +82,7 @@
                                 <td id="CellPhone" class="CellPhone"> {{ form.CellPhone }} </td>
                             </tr>
                             <tr>
-                                <td>CompanyCode</td>
+                                <td>Firmen Code</td>
                                 <td id="CompanyCode" class="CompanyCode"> {{ form.CompanyCode }} </td>
                                 <td>Standort</td>
                                 <td id="LocationCode" class="LocationCode"> {{ form.LocationCode }} </td>
@@ -85,10 +94,13 @@
                                 <td id="CreationTime" class="CreationTime"> {{ form.CreationTime }} </td>
                             </tr>
                             <tr>
-                            <td><input class="SubmitBtn" type='submit' value='save' /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input class="SubmitBtn" type='submit' value='speichern' /></td>
                             </tr>
                         </table>
-                    </div>
+                    </div>-->
             </form>
             {% endblock %}
         </div>

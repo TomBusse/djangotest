@@ -7,27 +7,35 @@ from users.models import Users
 # Create your views here.
 
 def create_user_view (request):
-    Uform = EditUsersForm(request.POST or None)
+    #Uform = EditUsersForm(not (not request.POST and not None))
+    Uform = EditUsersForm()
     UData = Users
 
-    if Uform.is_valid():
-        Uform.save()
-    else:
-        print("Form for Location is not valid, ")
+    if request.method == "POST":
+        Uform = EditUsersForm(request.POST)
+        UName = request.POST.get('UserName')
+        print("User Name: ",UName)
+
+        if Uform.is_valid():
+            Uform.save()
+            print("Form for Users is valid",Uform.cleaned_data)
+        else:
+            print(Uform.cleaned_data)
+            print("Form for Users is not valid", Uform.errors)
 
     context = {'form': Uform}
     context['Users_Headline'] = "Diese Daten sind zur Benutzung des Portals erforderlich"
-#
-
-
 
 #    print("Request GET:", request.GET)
 #    print("Request POST:", request.POST)
-    if request.method == "POST":
-        UName = request.POST.get('UserName')
-        print("User Name: ",UName)
-        print("Cleaned Data:", Uform.cleaned_data)
-        UData.objects.create(**Uform.cleaned_data)
+#    if request.method == "POST":
+#        UName = request.POST.get('UserName')
+#        print("User Name: ",UName)
+#        if Uform.is_valid():
+#            print("Cleaned Data:", Uform.cleaned_data)
+#            UData.objects.create(**Uform.cleaned_data)
+#        else:
+#            print("Form is not valid:\n", Uform.errors)
 
     return render(request, "users/users.html", context)
 
