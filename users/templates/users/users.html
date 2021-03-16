@@ -1,0 +1,98 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/users.css' %}">
+    <title>Users</title>
+</head>
+
+<body>
+<br>
+<br>
+
+<div class="content_container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            <div class="page-header">
+                <link rel="stylesheet" href="{% static 'css/users.css' %}">
+                <br>
+                <h1 class="Page-H1">Benutzer anlegen</h1>
+                <h2 class="Page-H2">Bitte gib alle Deine Daten ein</h2>
+                <h3 class="Page-H3"> {{ Users_Headline }} </h3> <!-- Daten aus der users.views-->
+            </div>
+            <br>
+<!--            <form method='POST'> {% csrf_token %}-->
+<!--                {{ form.as_p }} -->
+
+                <form action="" method='POST'> {% csrf_token %}
+                    <div class="UserData">
+                        <table class="Table">
+                            <tr>
+                                <td>Benutzername </td>
+                                <td id="UserName" class="UserName">{{ form.UserName }} </td>
+                            </tr>
+                            <tr>
+                                <td>Vorname</td>
+                                <td id="GivenName" class="GivenName"> {{ form.GivenName }} </td>
+                                <td>Nachname</td>
+                                <td id="SurName" class="Surname"> {{ form.Street }} </td>
+                            </tr>
+                            <tr>
+                                <td>PLZ</td>
+                                <td id="ZIP" class="ZIP"> {{ form.ZIP }} </td>
+                                <td>Stadt</td>
+                                <td id="Town" class="Town"> {{ form.Town }} </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bundesland</td>
+                                <td id="State" class="State"> {{ form.State }} </td>
+                            </tr>
+                            <tr>
+                                <td>EMail</td>
+                                <td id="EMail" class="EMail"> {{ form.EMail }} </td>
+                            </tr>
+                            <tr>
+                                <td>Messenger</td>
+                                <td id="MessengerType" class="MessengerType"> {{ form.MessengerType }} </td>
+                                <td>MessengerID</td>
+                                <td id="MessengerID" class="MessengerID"> {{ form.MessengerID }} </td>
+                            </tr>
+                            <tr>
+                                <td>Telefon</td>
+                                <td id="Phone" class="Phone"> {{ form.Phone }} </td>
+                                <td>Mobil</td>
+                                <td id="CellPhone" class="CellPhone"> {{ form.CellPhone }} </td>
+                            </tr>
+                            <tr>
+                                <td>CompanyCode</td>
+                                <td id="CompanyCode" class="CompanyCode"> {{ form.CompanyCode }} </td>
+                                <td>Standort</td>
+                                <td id="LocationCode" class="LocationCode"> {{ form.LocationCode }} </td>
+                            </tr>
+                            <tr>
+                                <td>Profil ist öffentlich</td>
+                                <td id="UserIsVisible" class="UserIsVisible"> {{ form.UserIsVisible }} </td>
+                                <td>Estellungsdatum</td>
+                                <td id="CreationTime" class="CreationTime"> {{ form.CreationTime }} </td>
+                            </tr>
+                            <tr>
+                            <td><input class="SubmitBtn" type='submit' value='save' /></td>
+                            </tr>
+                        </table>
+                    </div>
+            </form>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

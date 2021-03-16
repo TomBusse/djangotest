@@ -26,5 +26,6 @@ urlpatterns = [
     path('screens/', include('screens.urls')),
     path('', include('main.urls')),
     path('locations/create_location', include('locations.urls')),
+    path('users/', include('users.urls')),
     #path('post/new/', views.newscreen, name='newscreen'),
 ]

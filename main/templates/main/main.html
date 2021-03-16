@@ -13,7 +13,8 @@
     <title>LEDvertise</title>
 </head>
 
-<body>
+<body class="MainBody">
+
     <div class="Aurelius-Logo">
         <img src="{% static 'logo.svg' %}" id="logo" class="Aurelius-Logo-01">
     </div>
@@ -42,12 +43,12 @@
             </ul>
         </li>
 
-        <li><a href="#">User</a>
+        <li><a href="#">Benutzer</a>
             <ul class="submenu">
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Submenu c</a></li>
-                <li><a href="#">Submenu d</a></li>
+                <li><a href="/users">Neu</a></li>
+                <li><a href="#">Anzeigen</a></li>
+                <li><a href="#">Ändern</a></li>
+                <li><a href="#">Gruppen</a></li>
                 <li><a href="#">Submenu e</a></li>
                 <li><a href="#">Submenu f</a></li>
                 <li><a href="#">Submenu g</a></li>
@@ -59,19 +60,27 @@
         <li class="Aurelius"><a href="https://www.aurelius-bird.de/">Aurelius Bird®</a></li>
     </ul>
 
+    <div class="col-md-8">
+<!--                <hr><a>BLOCK MAIN--------------------------------</a>-->
+        {% block content %}
+        {% endblock %}
+<!--        <br><hr><a>END BLOCK MAIN--------------------------------</a>-->
+    </div>
 
-    <canvas id="HeadField" width="1920" height="1000"
-    style="border:0px solid #101010;">
+
+    <canvas id="HeadField" width="1920" height="80"
+    style="border:0px solid #701010;">
     </canvas>
     <script>
-    var c=document.getElementById("HeadField");
-    var ctx=c.getContext("2d");
-    ctx.fillStyle="#202020";
-    ctx.fillRect(0,0,screen.width,1000);
+        var c=document.getElementById("HeadField");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="#404040";
+        ctx.fillRect(0,0,screen.width,screen.height / 200);
     </script>
 
-<h2 class="IntroText01">Hallo Marc, Willkommen in Arnsberg</h2>
-
+        <div class="exampleone">
+            <a>Willkommen bei Aurelius Bird</a>
+        </div>
 </body>
 </html>
 

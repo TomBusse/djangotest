@@ -1,7 +1,16 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/create_location.css' %}">
+
     <title>Locations</title>
 </head>
 <body>
@@ -9,8 +18,26 @@
 <form method='POST'> {% csrf_token %}
     {{ form.as_p }}
     <input type='submit' value='save' />
-
 </form>
+
+<form action='http://www.google.com/search' method='GET'>
+    <input type= "text" name='q' placeholder="Gib hier den Suchbegriff ein" />
+    <input type="submit" value='Suchen' />
+</form>
+<br><hr><br>
+
+<form action="" method='POST'> {% csrf_token %}
+    <div class="LocationList">
+        <div id="Code" class="LocCode">{{ form.Code }} </div>
+        <div id="Name" class="LocName">{{ form.Name }} </div>
+        <div id="Street" class="LocStreet">{{ form.Street }} </div>
+        <a id="ZIP" class="LocZIP">{{ form.ZIP }} </a>
+        <a id="Town" class="LocTown">{{ form.Town }} </a>
+    </div>
+    <input type='submit' value='save' />
+</form>
+
+
 
 </body>
 </html>

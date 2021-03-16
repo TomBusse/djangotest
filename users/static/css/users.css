@@ -1,0 +1,49 @@
+.Page-H1 {
+    font-family: "Calibri";
+    font-size: 140%;
+    color: green;
+}
+.Page-H2 {
+    font-family: "Calibri";
+    font-size: 100%;
+    color: 505050;
+}
+.Page-H3 {
+    font-family: "Calibri";
+    font-size: 70%;
+    color: #3F3F3F;
+}
+.UserData {
+margin: 5px 5px 5px 5px;
+padding: 10px 10px 10px 20px;
+border-width: 2px;
+border-style: none;
+border-color: #A0A0A0;
+width: 75%;
+background-color: #E0E0E0;
+
+}
+.UserData td {
+    font-family: "Calibri";
+    font-size: 100%;
+    color: #00B030;
+    padding: 5px;
+    float: left;
+}
+
+.Table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px solid black;
+    padding: 5px;
+    text-align: left;
+    border-spacing: 5px;
+}
+.Table td {
+    width: 15%;
+    border-collapse: collapse;
+    border: 0px solid black;
+    padding: 5px,5px,5px,25px;
+    text-align: left;
+    border-spacing: 5px;
+}
