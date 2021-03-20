@@ -6,11 +6,15 @@
     color: white;
     height: 120px;
 }
-.HeadField02 {
-    position: fixed;
+.PageHead {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 5px;
     color: #202020;
-    background: #D0D0D0;
-    z-index: 1;
+    background: #F4F4F6;
+    z-index: 0;
+    width: 100%
 }
 
 .Site-Logo-01 {
@@ -108,7 +112,7 @@
     text-align: left;
     padding: 10px;
     height: 60px;
-    width: 480px;
+    width: 550px;
     margin: 20px 20px 20px 20px;
     background: #FFFFFF;
     box-sizing: border-box;
@@ -150,6 +154,22 @@
     letter-spacing: 1px;
     text-align: left;
     font-size: 16px;
+}
+.SidelineText {
+    color: #4F4F4F;
+    margin 50px 10px 10px 10px;
+    padding: 15px;
+    float: right;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 20px;
+    z-index: 3;
+    position: fixed;
+    left: 1050px;
+    top: 475px;
+    width: 30%;
+
 }
 .VideoMainScreen01 {
     /*float: center;
