@@ -15,13 +15,14 @@
 
 <body class="MainBody">
 
-    <canvas id="HeadField01" width="1920" height="10" style="border:0px solid #3575F5;"> </canvas>
+    <canvas id="HeadField01" width="1920" height="20" style="border:0px solid #3575F5;"> </canvas>
     <script>
         var c=document.getElementById("HeadField01");
         var ctx=c.getContext("2d");
         ctx.fillStyle="#4080FF";
         ctx.fillRect(0,0,screen.width,screen.height / 140);
     </script>
+
 
     <div class="Site-Logo01">
         <img src="{% static '/images/Bundesadler.png' %}" id="logo01" class="Site-Logo-01">
@@ -40,14 +41,28 @@
     </div>
 
     <div class="SiteMenu">
-        <h3 class="SiteMenu-Head">Aktuelles aus...</h3>
+        <h4 class="SiteMenu-Head">Aktuelles aus...</h4>
 
-            <a href="Wirtschft">der Wirtschaft |  </a>
-            <a href="Medizin">der Medizin |  </a>
-            <a href="Recht">dem Recht |  </a>
-            <a href="Wissenschaft">der Wissenschaft |  </a>
-
+        <a href="Wirtschft">der Wirtschaft &nbsp</a>
+        <a>&nbsp &nbsp</a>
+        <a href="Medizin">der Medizin &nbsp </a>
+        <a>&nbsp &nbsp</a>
+        <a href="Recht">dem Recht &nbsp </a>
+        <a>&nbsp &nbsp</a>
+        <a href="Informationstechnologie">der Informationstechnologie &nbsp </a>
+        <a>&nbsp &nbsp</a>
+        <a href="Wissenschaft">der Wissenschaft &nbsp </a>
+        <a>&nbsp &nbsp</a>
     </div>
+
+    <div class="HeadlineText">
+        <a class="MainSlugHead">Großdemo in Kassel bleibt friedlich</a>
+        <a class="MainSlugText">Weit über 400.000 Menschen haben an der Großdemonstration am 20. März
+           in Kassel teilgenommen. Die Demo war friedlich und verlief ohne Zwischenfälle. </a>
+        <a href="MainSlugLink" class="MainSlugLink" >Mehr> </a>
+    </div>
+
+
 
     <div class="MainImage">
         <img src="{% static '/images/Corona_Main_Image01.jpg' %}" id="MainImage" class="Main-Image-01">
