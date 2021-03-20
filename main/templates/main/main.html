@@ -15,33 +15,86 @@
 
 <body class="MainBody">
 
-    <div class="Aurelius-Logo">
-        <img src="{% static 'logo.svg' %}" id="logo" class="Aurelius-Logo-01">
+    <canvas id="HeadField01" width="1920" height="10" style="border:0px solid #3575F5;"> </canvas>
+    <script>
+        var c=document.getElementById("HeadField01");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="#4080FF";
+        ctx.fillRect(0,0,screen.width,screen.height / 140);
+    </script>
+
+    <div class="Site-Logo01">
+        <img src="{% static '/images/Bundesadler.png' %}" id="logo01" class="Site-Logo-01">
     </div>
 
+    <div class="Site-Logo02">
+        <img src="{% static '/images/Deutschlandflagge.png' %}" id="logo02" class="Site-Logo-02">
+    </div>
+
+    <div class="MainHeadline">
+        <a>Verband für Information und <br> Gestaltung der Zukunft der <br> Bundesrepublik Deutschland</a>
+    </div>
+
+    <div class="Main-Logo">
+        <a>Zukunft-Deutschland.Info</a>
+    </div>
+
+    <div class="SiteMenu">
+        <h3 class="SiteMenu-Head">Aktuelles aus...</h3>
+
+            <a href="Wirtschft">der Wirtschaft |  </a>
+            <a href="Medizin">der Medizin |  </a>
+            <a href="Recht">dem Recht |  </a>
+            <a href="Wissenschaft">der Wissenschaft |  </a>
+
+    </div>
+
+    <div class="MainImage">
+        <img src="{% static '/images/Corona_Main_Image01.jpg' %}" id="MainImage" class="Main-Image-01">
+    </div>
+
+
+
+<!--
     <div class="VideoMainScreen">
         <video src="{% static 'LEDvertise®_357.mp4' %}" id="LEDvertise®_357" class="VideoMainScreen01"></video>
     </div>
-
-
-
+-->
+    
     <ul class="menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#s1">Screen</a>
+        <li><a href="#s1">Allgemein</a>
             <ul class="submenu">
-                <li><a href="/screens">Screens</a></li>
+                <li><a href="/screens">Idee</a></li>
                 <li><a href="/locations/locations/create_location">Locations</a></li>
                 <li><a href="#">Groups</a></li>
                 <li><a href="#">Positions</a></li>
             </ul>
         </li>
 
-        <li class="active"><a href="#s2">Content</a>
+        <li class="active"><a href="#s2">Wirtschaft</a>
             <ul class="submenu">
-                <li><a href="#">Media</a></li>
+                <li><a href="#">Aktuelles</a></li>
                 <li><a href="#">Playlists</a></li>
             </ul>
         </li>
+
+        <li class="active"><a href="#s3">Medizin</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Downloads</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s4">Recht</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Urteile</a></li>
+                <li><a href="#">Vorlagen</a></li>
+                <li><a href="#">Downloads</a></li>
+            </ul>
+        </li>
+
 
         <li><a href="#">Benutzer</a>
             <ul class="submenu">
@@ -67,20 +120,6 @@
 <!--        <br><hr><a>END BLOCK MAIN--------------------------------</a>-->
     </div>
 
-
-    <canvas id="HeadField" width="1920" height="80"
-    style="border:0px solid #701010;">
-    </canvas>
-    <script>
-        var c=document.getElementById("HeadField");
-        var ctx=c.getContext("2d");
-        ctx.fillStyle="#404040";
-        ctx.fillRect(0,0,screen.width,screen.height / 200);
-    </script>
-
-        <div class="exampleone">
-            <a>Willkommen bei Aurelius Bird</a>
-        </div>
 </body>
 </html>
 

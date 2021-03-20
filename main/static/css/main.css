@@ -1,22 +1,94 @@
 .MainBody {
-    background-color: #F0F0F2;
+    background-color: #FEFEFF;
 }
-.exampleone {
-  background-color: #808085;
-  color: white;
+.MainHeadline {
+    background-color: #10F0F5;
+    color: white;
+    height: 120px;
 }
-.exampletwo {
-  background-color: green;
-  color: white;
+.Site-Logo-01 {
+    float: left;
+    width: 70px;
+    height:70px;
+    border: 0px solid #73AD21;
+    padding: 5px;
+    margin: 10px 0px 0px 40px;   /* top right bottom left */
+    transform: rotateY(180deg);
+}
+.Site-Logo-02 {
+    float: left;
+    width: 10px;
+    height:90px;
+    border: 0px solid #73AD21;
+    padding: 2px;
+    margin: 5px 0px 0px 10px;
+    transform: rotateY(180deg);
+}
+.MainHeadline {
+    color: #505050;
+    float: left;
+    font: "Calibri";
+    font-size: 18px;
+    border: 0px solid #73AD21;
+    padding: 5px;
+    margin: 5px 0px 0px 10px;
+    background: none;
+}
+.Main-Logo {
+    color: #5080B0;
+    float: right;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 1px;
+    height: 50px;
+    width: 420px;
+    margin: 80px 30px 10px 10px;
+    background: #D8DADF;
+    box-sizing: border-box;
+    border: 3px solid #D8DADF;
+    border-radius: 5px;
+    font-size: 28px;
+/*  box-shadow: 5px 8px #B0B3B5; */
+}
+.SiteMenu {
+    float: left;
+    color: #505050;
+    font: "Calibri";
+    font-size: 20px;
+}
+.SiteMenu a {
+    float: left;
+    color: #505070;
+    font: "Calibri";
+    font-size: 14px;
 }
 
-.Aurelius-Logo-01 {
-    float: right;
-    width: 250px;
-    height: 55px;
-    border: 1px solid #73AD21;
-    padding: 10px;
+.Main-Image-01 {
+    float: left;
+    width: 850px;
+    height: 500px;
+    padding: 0px;
+    margin: 20px 20px 20px 20px;
+    background: #D8DADF;
+    box-sizing: border-box;
+    border: 5px solid #D8DADF;
+    border-radius: 5px;
+    position: fixed;
+    left: 20px;
+    top: 200px;
 }
+.SiteMenu {
+    float: left;
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+    background: none;
+    position: fixed;
+    left: 20px;
+    top: 130px;
+
+}
+
 .VideoMainScreen01 {
     /*float: center;
     width: 800px;
@@ -37,74 +109,86 @@
     padding (40%,40%,40%,40%);
 }
 
+
+/* ***************************** Menü ************************** */
+
 .menu, .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .menu {
-    height: 52px;
+    background: #999999;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+
 }
 .menu li {
-    background: -moz-linear-gradient(#292929, #353540);
-    background: -ms-linear-gradient(#292929, #353540);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #353540));
-    background: -webkit-linear-gradient(#292929, #353540);
-    background: -o-linear-gradient(#292929, #353540);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#353540');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#353540')";
-    background: linear-gradient(#292929, #353540);
-    border-bottom: 2px solid #181818;
-    border-top: 2px solid #303030;
-    min-width: 160px;
+    background: -moz-linear-gradient(#F3F3F3, #FAFAFC); /* #D9D9D9 , #E5E5EF */
+    background: -ms-linear-gradient(#F3F3F3, #FAFAFC);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D9D9D9), color-stop(100%, #E5E5E5));
+    background: -webkit-linear-gradient(#F3F3F3, #FAFAFC);
+    background: -o-linear-gradient(#F3F3F3, #FAFAFC);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#E5E5EF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#E5E5EF')";
+    background: linear-gradient(#F3F3F3, #FAFAFC);
+    border-bottom: 1px solid #F0F0F0;
+    border-top: 1px solid #F0F0F0;
+    min-width: 100px;
 }
 .menu > li {
     display: block;
     float: left;
     position: relative;
+    fon
 }
 .menu > li:first-child {
-    border-radius: 5px 0 0;
+    border-radius: 3px 0px 0px 3px;
 }
+.menu > li:last-child {
+    border-radius: 0px 3px 3px 0px;
+}
+
 .menu a {
     border-left: 3px solid rgba(0, 0, 0, 0);
-    color: #80F080;
+    color: #303030;
     display: block;
     /*font-family: 'Lucida Console';*/
     font-family: 'Calibri';
-    font-size: 16px;
-    line-height: 50px;
-    padding: 0 25px;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 10px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 /*-------------------------------------*/
 
 .menu li:hover {
-    background-color: #1c1c1c;
-    background: -moz-linear-gradient(#1c1c1c, #1b1b1b);
-    background: -ms-linear-gradient(#1c1c1c, #1b1b1b);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c1c1c), color-stop(100%, #1b1b1b));
-    background: -webkit-linear-gradient(#1c1c1c, #1b1b1b);
-    background: -o-linear-gradient(#1c1c1c, #1b1b1b);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";
-    background: linear-gradient(#1c1c1c, #1b1b1b);
-    border-bottom: 2px solid #222222;
-    border-top: 2px solid #1B1B1B;
+    background-color: #B0B0B3; /* #B0B0B3 */
+    background: -moz-linear-gradient(#B0B0B3, #A0A0A3);
+    background: -ms-linear-gradient(#B0B0B3, #A0A0A3);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B0B0B3), color-stop(100%, #A0A0A3));
+    background: -webkit-linear-gradient(#B0B0B3, #A0A0A3);
+    background: -o-linear-gradient(#B0B0B3, #A0A0A3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B0B0B3', endColorstr='#A0A0A3');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B0B0B3', endColorstr='#A0A0A3')";
+    background: linear-gradient(#B0B0B3, #A0A0A3);
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #A0A0A3;
 }
 .menu li:hover > a {
-    border-radius: 5px 0 0 0;
+    border-radius: 2px 0 0 0;
     /*border-left: 3px solid #C4302B;*/
-    border-left: 2px solid #303040;
-    border-right: 2px solid #303040;
-    border-top: 2px solid #303040;
-    border-bottom: 2px solid #303040;
-    color: #C0C0D0;
+    border-left: 1px solid #A0A0A0;
+    border-right: 1px solid #A0A0A0;
+    border-top: 1px solid #A0A0A0;
+    border-bottom: 1px solid #A0A0A0;
+    /* color: #C0C0D0; */
+    color: #103070;
 }
-
-
 /* submenu styles */
 .submenu {
     left: 0;

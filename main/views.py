@@ -7,4 +7,4 @@ def main_view (request):
     #import cgi
     #Display = "Das ist ein Display"
     # return HttpResponse ("Das ist die Seite MAIN")
-    return render(request, 'main/main.html')
+    return render(request, 'main/startpage.html')

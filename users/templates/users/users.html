@@ -24,16 +24,20 @@
             <div class="page-header">
                 <link rel="stylesheet" href="{% static 'css/users.css' %}">
                 <br>
-                <h1 class="Page-H1">Benutzer anlegen</h1>
-                <h2 class="Page-H2">Bitte gib alle Deine Daten ein</h2>
-                <h3 class="Page-H3"> {{ Users_Headline }} </h3> <!-- Daten aus der users.views-->
+                <h1 class="Page-H1">Benutzer anlegen >>></h1>
+                <h2 class="Page-H2">Bitte gib die Daten ein.</h2>
+                <h3 class="Page-H3">Die Daten sind nötig um neue Screens anzulegen oder <br>
+                    Kampagnen zu erstellen und zu verwalten. <br> {{ Users_Headline }}</h3> <!-- {{ Users_Headline }} = Daten aus der users.views-->
+
             </div>
             <br>
 <!--            <form method='POST'> {% csrf_token %}
                 {{ form.as_p }}
+                {% csrf_token %}
 -->
 
                 <form action="" method='POST'> {% csrf_token %}
+
                     <div class="UserData">
                         <table class="Table">
                             <tr>

@@ -22,9 +22,10 @@ def create_user_view (request):
         else:
             print(Uform.cleaned_data)
             print("Form for Users is not valid", Uform.errors)
+            Uform = Uform (request.POST, instance=Uform)
 
     context = {'form': Uform}
-    context['Users_Headline'] = "Diese Daten sind zur Benutzung des Portals erforderlich"
+    context['Users_Headline'] = "Felder mit * müssen ausgefüllt werden."
 
 #    print("Request GET:", request.GET)
 #    print("Request POST:", request.POST)
