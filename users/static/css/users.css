@@ -1,12 +1,18 @@
+.Page-Header {
+    margin: 100px 10px 10px 10px;
+    font-family: "Calibri";
+    font-size: 120%;
+    color: #007BFF;
+}
 .Page-H1 {
     font-family: "Calibri";
-    font-size: 140%;
-    color: green;
+    font-size: 100%;
+    color: #007BFF;
 }
 .Page-H2 {
     font-family: "Calibri";
     font-size: 100%;
-    color: 505050;
+    color: #3F3F3F;
 }
 .Page-H3 {
     font-family: "Calibri";
@@ -15,18 +21,18 @@
 }
 .UserData {
 margin: 5px 5px 5px 5px;
-padding: 20px 5px 5px 20px;
+padding: 10px 5px 5px 10px;
 border-width: 2px;
 border-style: none;
 border-color: #A0A0A0;
 width: 80%;
 background-color: #E0E0E0;
-
 }
+
 .UserData td {
     font-family: "Calibri";
     font-size: 100%;
-    color: #009030;
+    color: #007BFF;
     padding: 5px;
     float: left;
     width: 24%;

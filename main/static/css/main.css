@@ -1,10 +1,12 @@
+.col-md-8 {
+    float: right;
+    margin: 120px 10px 10px 10px;
+    background: none;
+    width: 30%;
+}
+
 .MainBody {
     background-color: #FEFEFF;
-}
-.MainHeadline {
-    background-color: #10F0F5;
-    color: white;
-    height: 120px;
 }
 .PageHead {
     position: absolute;
@@ -47,9 +49,11 @@
     margin: 15px 0px 0px 10px;
     background: none;
     z-index: 2;
+    height: 120px;
 }
 .Main-Logo {
     color: #5080B0;
+    background-color: #10F0F5;
     float: right;
     font: "Liberation Sans Narrow";
     letter-spacing: 3px;
@@ -66,6 +70,15 @@
     z-index: 2;
 /*  box-shadow: 5px 8px #B0B3B5; */
 }
+.Media-Menu {
+    float: right;
+    color: #303030;
+    margin: 1px 18px 10px 10px;
+    font: "Calibri";
+    font-size: 22px;
+    background: none;
+}
+
 .SiteMenu {
     float: left;
     color: #505050;
@@ -169,28 +182,7 @@
     left: 1050px;
     top: 475px;
     width: 30%;
-
 }
-.VideoMainScreen01 {
-    /*float: center;
-    width: 800px;
-    height: 450px;
-    border: 1px solid #73AD21;
-    padding: 10px;*/
-    border: 3px solid #365810;
-    background #202025;
-    height: 150px;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.IntroText01 {
-    position: absolute;
-    float: right;
-    padding (40%,40%,40%,40%);
-}
-
 
 /* ***************************** Menü ************************** */
 
@@ -429,4 +421,3 @@
     -o-transition-delay: 0s;
     transition-delay: 0s;
 }
-

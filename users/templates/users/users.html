@@ -21,13 +21,13 @@
     <div class="row">
         <div class="col-md-8">
             {% block content %}
-            <div class="page-header">
+            <div class="Page-Header">
                 <link rel="stylesheet" href="{% static 'css/users.css' %}">
                 <br>
                 <h1 class="Page-H1">Benutzer anlegen >>></h1>
                 <h2 class="Page-H2">Bitte gib die Daten ein.</h2>
-                <h3 class="Page-H3">Die Daten sind nötig um neue Screens anzulegen oder <br>
-                    Kampagnen zu erstellen und zu verwalten. <br> {{ Users_Headline }}</h3> <!-- {{ Users_Headline }} = Daten aus der users.views-->
+                <h3 class="Page-H3">Die vollständigen Daten sind nötig um neue Benutzer anzulegen. <br>
+                    Daten werden überprüft. <br> {{ Users_Headline }}</h3> <!-- {{ Users_Headline }} = Daten aus der users.views-->
 
             </div>
             <br>
@@ -41,36 +41,36 @@
                     <div class="UserData">
                         <table class="Table">
                             <tr>
-                                <td>Benutzername </td>
+                                <td>Benutzername *</td>
                                 <td id="UserName" class="UserName">{{ form.UserName }} </td>
                             </tr>
                             <tr>
-                                <td>Vorname</td>
+                                <td>Vorname *</td>
                                 <td id="GivenName" class="GivenName"> {{ form.GivenName }} </td>
-                                <td>Mittelname</td>
+                                <td>Mittelname *</td>
                                 <td id="MiddleName" class="MiddleName"> {{ form.MiddleName }} </td>
                             </tr>
                             <tr>
-                                <td>Nachname</td>
+                                <td>Nachname *</td>
                                 <td id="SurName" class="Surname"> {{ form.SurName }} </td>
                             </tr>
                             <tr>
-                                <td>Straße</td>
+                                <td>Straße *</td>
                                 <td id="Street" class="Street"> {{ form.Street }} </td>
                             </tr>
                             <tr>
-                                <td>PLZ</td>
+                                <td>PLZ *</td>
                                 <td id="ZIP" class="ZIP"> {{ form.ZIP }} </td>
-                                <td>Stadt</td>
+                                <td>Stadt *</td>
                                 <td id="Town" class="Town"> {{ form.Town }} </td>
 
                             </tr>
                             <tr>
-                                <td>Bundesland</td>
+                                <td>Bundesland *</td>
                                 <td id="State" class="State"> {{ form.State }} </td>
                             </tr>
                             <tr>
-                                <td>EMail</td>
+                                <td>EMail *</td>
                                 <td id="EMail" class="EMail"> {{ form.EMail }} </td>
                             </tr>
                             <tr>
@@ -82,7 +82,7 @@
                             <tr>
                                 <td>Telefon</td>
                                 <td id="Phone" class="Phone"> {{ form.Phone }} </td>
-                                <td>Mobil</td>
+                                <td>Mobil *</td>
                                 <td id="CellPhone" class="CellPhone"> {{ form.CellPhone }} </td>
                             </tr>
                             <tr>
@@ -92,7 +92,7 @@
                                 <td id="LocationCode" class="LocationCode"> {{ form.LocationCode }} </td>
                             </tr>
                             <tr>
-                                <td>Profil ist öffentlich</td>
+                                <td>Profil ist öffentlich *</td>
                                 <td id="UserIsVisible" class="UserIsVisible"> {{ form.UserIsVisible }} </td>
                                 <td>Estellungsdatum</td>
                                 <td id="CreationTime" class="CreationTime"> {{ form.CreationTime }} </td>
