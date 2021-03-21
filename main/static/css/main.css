@@ -10,7 +10,7 @@
     position: absolute;
     padding: 0px;
     margin: 0px;
-    top: 5px;
+    top: 7px;
     color: #202020;
     background: #F4F4F6;
     z-index: 0;
@@ -23,7 +23,7 @@
     height:70px;
     border: 0px solid #73AD21;
     padding: 5px;
-    margin: 10px 0px 0px 40px;   /* top right bottom left */
+    margin: 25px 0px 0px 40px;   /* top right bottom left */
     transform: rotateY(180deg);
     z-index: 2;
 }
@@ -33,7 +33,7 @@
     height:90px;
     border: 0px solid #73AD21;
     padding: 2px;
-    margin: 5px 0px 0px 10px;
+    margin: 15px 0px 0px 10px;
     transform: rotateY(180deg);
     z-index: 2;
 }
@@ -44,7 +44,7 @@
     font-size: 18px;
     border: 0px solid #73AD21;
     padding: 5px;
-    margin: 5px 0px 0px 10px;
+    margin: 15px 0px 0px 10px;
     background: none;
     z-index: 2;
 }
