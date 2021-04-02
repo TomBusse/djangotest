@@ -3,79 +3,40 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
-    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{% static 'css/startpage.css' %}">
-    <title>Start</title>
-</head>
 
-<body {background-color: 606070;}>
-<div class="page-header">
-    <h1>Dies ist die Startseite in der STARTPAGE.HTML</h1>
-</div>
+<body class="Block-Body">
 
-
-<div class="content_container">
-        <div class="col-md-8">
             {% block content %}
+            <div class="Startpage-SiteMenu">
+                <h4 class="SiteMenu-Head">Aktuelles aus...</h4>
+                <a href="Wirtschft">der Wirtschaft&nbsp</a>
+                <a>&nbsp &nbsp</a>
+                <a href="Medizin">der Medizin&nbsp </a>
+                <a>&nbsp &nbsp</a>
+                <a href="Recht">dem Recht&nbsp </a>
+                <a>&nbsp &nbsp</a>
+                <a href="Informationstechnologie">der Informationstechnologie&nbsp </a>
+                <a>&nbsp &nbsp</a>
+                <a href="Wissenschaft">der Wissenschaft&nbsp </a>
+                <a>&nbsp &nbsp</a>
+            </div>
 
-                <body class="MainBody">
+            <div class="Startpage-MainImage">
+                <img src="{% static '/images/Bundestag_Mainpage.jpg' %}" class="Startpage-MainImage01">
+            </div>
 
-                    <div class="Media-Menu">
-                        <a href="Videos" class="Media-Menu01">Videos&nbsp </a>
-                        <a href="Podcasts" class=Media-Menu02">Podcasts&nbsp </a>
-                        <a href="Berichte" class="Media-Menu03">Berichte&nbsp </a>
-                        <a href="Live" class="Media-Menu04">Live Streams&nbsp </a>
-                    </div>
+            <div class="Startpage-Headline">
+                <a>Das Portal für die Zukunft Deutschlands</a>
+            </div>
+            <div class="Startpage-Headline-Text">
+                <p>Diese Internetportal ist nicht einfach eine Web-Seite, sondern basiert auf morderner
+                    Datenabanktechnolgie (Python / Django). Es soll dazu dienen die einzelnen, aktiven
+                Gruppen untereinander zu vernetzen.</p>
+            </div>
 
-                    <canvas id="HeadField01" width="1920" height="20" style="border:0px solid #3575F5;"> </canvas>
-                    <script>
-                        var c=document.getElementById("HeadField01");
-                        var ctx=c.getContext("2d");
-                        ctx.fillStyle="#4080FF";
-                        ctx.fillRect(0,0,screen.width,screen.height / 140);
-                    </script>
-
-                    <div class="SiteMenu">
-                        <h4 class="SiteMenu-Head">Aktuelles aus...</h4>
-                        <a href="Wirtschft">der Wirtschaft&nbsp</a>
-                        <a>&nbsp &nbsp</a>
-                        <a href="Medizin">der Medizin&nbsp </a>
-                        <a>&nbsp &nbsp</a>
-                        <a href="Recht">dem Recht&nbsp </a>
-                        <a>&nbsp &nbsp</a>
-                        <a href="Informationstechnologie">der Informationstechnologie&nbsp </a>
-                        <a>&nbsp &nbsp</a>
-                        <a href="Wissenschaft">der Wissenschaft&nbsp </a>
-                        <a>&nbsp &nbsp</a>
-                    </div>
-
-                    <div class="HeadlineText">
-                        <a href= "http://www.novotech.de" class="MainSlugHead">Die Großdemo in Kassel bleibt friedlich</a>
-                        <p class="MainSlugText">Weit über 400.000 Menschen haben an der Groß- demonstration am 20. März 2021
-                           in Kassel teilgenommen. Die Demo war friedlich und verlief ohne Zwischenfälle und wurde von den
-                            Organisatoren als Erfolg gewertet. <br> Zur gleichen Zeit fanden große Demonstrationen in Stuttgart,
-                            London, Paris und Brüssel statt.</p>
-                        <a href="MainSlugLink" class="MainSlugLink" >Mehr> </a>
-                    </div>
-
-                    <div class="SidelineText">
-                        <p class="SideLine01">Erste Bank, Greensill Ltd., geht in Konkurs. <br>Elf deutsche Kommunen betroffen.
-                            <br>Verluste in Höhe von 58 Millionen befürchtet</p><hr>
-                        <p class="SideLine02">Linke Antifa Schläger versuchen erfolglos die Demo in Kassel zu stören</p><hr>
-                    </div>
-
-                    <div class="MainImage">
-                        <img src="{% static '/images/Corona_Main_Image01.jpg' %}" id="MainImage" class="Main-Image-01">
-                    </div>
 
             {% endblock %}
         </div>
-    </div>
-</div>
+
 </body>
 </html>

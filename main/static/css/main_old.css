@@ -1,47 +1,205 @@
-.Main-Body {
-    float: left;
-    background-color: #F0F0F5;
-    width: 100%;
-    height: 100%;
-    color: #30A0F0;
-    z-order: 0;
-    min-width: 1000px;
+.col-md-8 {
+    float: right;
+    margin: 120px 10px 10px 10px;
+    background: none;
+    width: 30%;
 }
-.Small-Head-Line {
-    width: 100%;
-    height: 7px;
-    color: #003075;
-    border: 0px;
-    border-color: #003075;
-    background-color: #003075;
-    margin: 0px;
-    padding: 2px;
+
+.MainBody {
+    background-color: #FEFEFF;
+}
+.PageHead {
     position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 7px;
+    color: #202020;
+    background: #F4F4F6;
+    z-index: 0;
+    width: 100%
 }
-.Startpage-Media-Menu {
-    position: relative;
-    top: 135px;
-    right: 20px;
-    color: #002060;
+
+.Site-Logo-01 {
+    float: left;
+    width: 70px;
+    height:70px;
+    border: 0px solid #73AD21;
+    padding: 5px;
+    margin: 25px 0px 0px 40px;   /* top right bottom left */
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+.Site-Logo-02 {
+    float: left;
+    width: 10px;
+    height:90px;
+    border: 0px solid #73AD21;
+    padding: 2px;
+    margin: 15px 0px 0px 10px;
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+.MainHeadline {
+    color: #505050;
+    float: left;
+    font: "Calibri";
+    font-size: 18px;
+    border: 0px solid #73AD21;
+    padding: 5px;
+    margin: 15px 0px 0px 10px;
+    background: none;
+    z-index: 2;
+    height: 120px;
+}
+.Main-Logo {
+    color: #5080B0;
+    background-color: #10F0F5;
+    float: right;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 1px;
+    height: 50px;
+    width: 420px;
+    margin: 80px 30px 10px 10px;
+    background: #D8DADF;
+    box-sizing: border-box;
+    border: 3px solid #D8DADF;
+    border-radius: 5px;
+    font-size: 28px;
+    z-index: 2;
+/*  box-shadow: 5px 8px #B0B3B5; */
+}
+.Media-Menu {
+    float: right;
+    color: #303030;
+    margin: 1px 18px 10px 10px;
+    font: "Calibri";
+    font-size: 22px;
+    background: none;
+}
+
+.SiteMenu {
+    float: left;
+    color: #505050;
+    font: "Calibri";
+    font-size: 18px;
+}
+.SiteMenu a {
+    float: left;
+    color: #505070;
+    font: "Calibri";
+    font-size: 14px;
+}
+
+.Main-Image-01 {
+    float: left;
+    width: 900px;
+    height: 550px;
+    padding: 0px;
+    margin: 20px 20px 20px 20px;
+    background: #D8DADF;
+    box-sizing: border-box;
+    border: 5px solid #D8DADF;
+    border-radius: 5px;
+    body style: background;
+    position: fixed;
+    left: 20px;
+    top: 200px;
+    z-index: 1;
+}
+.SiteMenu {
+    float: left;
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+    background: none;
+    position: fixed;
+    left: 20px;
+    top: 130px;
+}
+.HeadlineText {
+    color: #802040;
+    float: left;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 10px;
+    height: 60px;
+    width: 550px;
+    margin: 20px 20px 20px 20px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 4px solid #802040;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 2;
+    position: fixed;
+    left: 800px;
+    top: 195px;
+}
+.MainSlugHead {
+    color: #802040;
+    float: left;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.MainSlugText {
+    color: #DFDFDF;
+    background: #802040;
+    margin 15px;
+    padding: 15px;
+    float: left;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 16px;
+}
+.MainSluglink {
+    color: #DFDFDF;
+    background: #802040;
+    margin 15px;
+    padding: 15px;
+    float: left;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 16px;
+}
+.SidelineText {
+    color: #4F4F4F;
+    margin 50px 10px 10px 10px;
+    padding: 15px;
+    float: right;
+    font: "Liberation Sans Narrow";
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 20px;
+    z-index: 3;
+    position: fixed;
+    left: 1050px;
+    top: 475px;
+    width: 30%;
 }
 
 /* ***************************** Menü ************************** */
-.Main-Menu, .Main-Menu ul {
+
+.menu, .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    float: left;
-    z-order: 2;
 }
-.Main-Menu {
+.menu {
     background: #999999;
-    height: 27px;
+    height: 25px;
     position: fixed;
     top: 7px;
     right: 0px;
-    min-width: 607px;
+
 }
-.Main-Menu li {
+.menu li {
     background: -moz-linear-gradient(#F3F3F3, #FAFAFC); /* #D9D9D9 , #E5E5EF */
     background: -ms-linear-gradient(#F3F3F3, #FAFAFC);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D9D9D9), color-stop(100%, #E5E5E5));
@@ -52,21 +210,22 @@
     background: linear-gradient(#F3F3F3, #FAFAFC);
     border-bottom: 1px solid #F0F0F0;
     border-top: 1px solid #F0F0F0;
-    min-width: 135px;
+    min-width: 100px;
 }
-.Main-Menu > li {
+.menu > li {
     display: block;
     float: left;
     position: relative;
+    fon
 }
-.Main-Menu > li:first-child {
+.menu > li:first-child {
     border-radius: 3px 0px 0px 3px;
 }
-.Main-Menu > li:last-child {
+.menu > li:last-child {
     border-radius: 0px 3px 3px 0px;
 }
 
-.Main-Menu a {
+.menu a {
     border-left: 3px solid rgba(0, 0, 0, 0);
     color: #303030;
     display: block;
@@ -76,12 +235,12 @@
     line-height: 30px;
     padding: 0 10px;
     text-decoration: none;
-    text-transform: none;
+    text-transform: capitalize;
 }
 
 /*-------------------------------------*/
 
-.Main-Menu li:hover {
+.menu li:hover {
     background-color: #B0B0B3; /* #B0B0B3 */
     background: -moz-linear-gradient(#B0B0B3, #A0A0A3);
     background: -ms-linear-gradient(#B0B0B3, #A0A0A3);
@@ -94,7 +253,7 @@
     border-bottom: 1px solid #222222;
     border-top: 1px solid #A0A0A3;
 }
-.Main-Menu li:hover > a {
+.menu li:hover > a {
     border-radius: 2px 0 0 0;
     /*border-left: 3px solid #C4302B;*/
     border-left: 1px solid #A0A0A0;
@@ -130,16 +289,16 @@
     -o-transition: opacity .4s, -o-transform .5s;
     transition: opacity .4s, transform .5s;
 }
-.Main-Menu .submenu li:hover a {
+.menu .submenu li:hover a {
     border-left: 3px solid #454545;
     border-radius: 0;
     color: #ffffff;
 }
-.Main-Menu > li:hover .submenu, .Main-Menu > li:focus .submenu {
+.menu > li:hover .submenu, .menu > li:focus .submenu {
     max-height: 2000px;
     z-index: 10;
 }
-.Main-Menu > li:hover .submenu li, .Main-Menu > li:focus .submenu li {
+.menu > li:hover .submenu li, .menu > li:focus .submenu li {
     opacity: 1;
     -webkit-transform: none;
     -moz-transform: none;
@@ -148,57 +307,58 @@
     transform: none;
 }
 
+
 /* CSS3 delays for transition effects */
-.Main-Menu li:hover .submenu li:nth-child(1) {
+.menu li:hover .submenu li:nth-child(1) {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     -ms-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s;
 }
-.Main-Menu li:hover .submenu li:nth-child(2) {
+.menu li:hover .submenu li:nth-child(2) {
     -webkit-transition-delay: 50ms;
     -moz-transition-delay: 50ms;
     -ms-transition-delay: 50ms;
     -o-transition-delay: 50ms;
     transition-delay: 50ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(3) {
+.menu li:hover .submenu li:nth-child(3) {
     -webkit-transition-delay: 100ms;
     -moz-transition-delay: 100ms;
     -ms-transition-delay: 100ms;
     -o-transition-delay: 100ms;
     transition-delay: 100ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(4) {
+.menu li:hover .submenu li:nth-child(4) {
     -webkit-transition-delay: 150ms;
     -moz-transition-delay: 150ms;
     -ms-transition-delay: 150ms;
     -o-transition-delay: 150ms;
     transition-delay: 150ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(5) {
+.menu li:hover .submenu li:nth-child(5) {
     -webkit-transition-delay: 200ms;
     -moz-transition-delay: 200ms;
     -ms-transition-delay: 200ms;
     -o-transition-delay: 200ms;
     transition-delay: 200ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(6) {
+.menu li:hover .submenu li:nth-child(6) {
     -webkit-transition-delay: 250ms;
     -moz-transition-delay: 250ms;
     -ms-transition-delay: 250ms;
     -o-transition-delay: 250ms;
     transition-delay: 250ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(7) {
+.menu li:hover .submenu li:nth-child(7) {
     -webkit-transition-delay: 300ms;
     -moz-transition-delay: 300ms;
     -ms-transition-delay: 300ms;
     -o-transition-delay: 300ms;
     transition-delay: 300ms;
 }
-.Main-Menu li:hover .submenu li:nth-child(8) {
+.menu li:hover .submenu li:nth-child(8) {
     -webkit-transition-delay: 350ms;
     -moz-transition-delay: 350ms;
     -ms-transition-delay: 350ms;
@@ -260,123 +420,4 @@
     -ms-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s;
-}
-/* ******************************** End Main Menu *************************** */
-
-.Block-Content {
-    position: relative;
-    background-color: #FBFBFF;
-    padding: 10px 0px 0px 0px;
-    margin: 35px 0px 0px 0px;
-    float: left;
-    width: 100%;
-    height: 100%;
-    color: #2060A0;
-    z-order: 1;
-}
-.Startpage-Media-Menu {
-    float: right;
-}
-.Startpage-Media-Menu a {
-    padding: 0px 0px 0px 20px;
-    color: #2060A0;
-}
-.PageHead {
-    padding: 0px;
-    margin: 15px 0px 0px 0px;
-    top: 10%;
-    color: #202020;
-    background: #F4F4F6;
-    z-index: 0;
-    width: 100%
-}
-.Site-Logo-Eagle {
-    float: left;
-    width: 70px;
-    height:70px;
-    border: 0px solid #73AD21;
-    padding: 5px;
-    margin: 45px 0px 0px 40px;   /* top right bottom left */
-    transform: rotateY(180deg);
-    z-index: 2;
-}
-.Site-Logo-Flag {
-    float: left;
-    width: 10px;
-    height:90px;
-    border: 0px solid #73AD21;
-    padding: 2px;
-    margin: 35px 0px 0px 10px;
-    transform: rotateY(180deg);
-    z-index: 2;
-}
-.Logo-MainHeadline {
-    color: #505050;
-    float: left;
-    font: "Calibri";
-    font-size: 18px;
-    border: 0px solid #73AD21;
-    padding: 5px;
-    margin: 35px 0px 0px 10px;
-    background: none;
-    z-index: 2;
-    height: 60px;
-}
-
-.Startpage-SiteMenu {
-    margin: 0px 0px 0px 30px;
-    color: #404040;
-    font: "Calibri";
-    font-size: 16px;
-}
-
-.Startpage-SiteMenu a {
-    color: #002060;
-    font: "Calibri";
-    font-size: 15px;
-}
-
-.Startpage-MainImage01 {
-    float: left;
-    width: 55%;
-    height: 55%;
-    margin: 3px 10px 10px 30px;
-}
-
-.Startpage-Headline {
-    color: #802040;
-    border-color: #802040;
-    background-color: #F0F0F8;
-    box-sizing: border-box;
-    border: 3px solid;
-    border-radius: 5px;
-    float: left;
-    font: "Liberation Sans Narrow";
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: left;
-    font-size: 33px;
-    position: absolute;
-    margin: 0% 0% 0% 45%;
-    padding: 10px;
-    width: 740px;
-    height: 75px;
-}
-.Startpage-Headline-Text {
-    color: #F0F0F8;
-    border-color: #802040;
-    background-color: #802040;
-    box-sizing: border-box;
-    border: 0px solid;
-    border-radius: 1px;
-    float: left;
-    font: "Liberation Sans Narrow";
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-    margin: 70px 0% 0% 45%;
-    padding: 10px;
-    width: 740px;
 }

@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <a>Das ist ein Test</a>
+<head>
+    <meta charset="UTF-8">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>LEDvertise</title>
+</head>
+
+<body class="MainBody">
+    <canvas class="HeadCanvas01" id="HeadCanvas01"  </canvas>
+    <a>Das ist ein Test</a>
+    <hr>
+<!---
+    <canvas id="HeadField01" width="1920" height="20" style="border:0px solid #3575F5;"> </canvas>
+    <script>
+        var c=document.getElementById("HeadField01");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="#4080FF";
+        ctx.fillRect(0,0,screen.width,screen.height / 140);
+    </script>
+</body>
+    <div class="PageHead">
+        <div class="Site-Logo01">
+            <img src="{% static '/images/Bundesadler.png' %}" id="logo01" class="Site-Logo-01">
+        </div>
+
+        <div class="Site-Logo02">
+            <img src="{% static '/images/Deutschlandflagge.png' %}" id="logo02" class="Site-Logo-02">
+        </div>
+
+        <div class="MainHeadline">
+            <a>Verband für Information und <br> Gestaltung der Zukunft der <br> Bundesrepublik Deutschland</a>
+
+        </div>
+
+        <div class="Main-Logo">
+            <a>Zukunft-Deutschland.Info</a>
+        </div>
+    </div>
+--->
+<!---
+    <ul class="menu">
+        <li><a href="#s1">Allgemein</a>
+            <ul class="submenu">
+                <li><a href="/screens">Unsere Idee</a></li>
+                <li><a href="/locations/locations/create_location">Ziele</a></li>
+                <li><a href="#">Gruppen</a></li>
+                <li><a href="#">Über uns</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s2">Wirtschaft</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Genossenschaften</a></li>
+                <li><a href="#">Kooperation</a></li>
+                <li><a href="#">Konzepte</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Stellen</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s3">Medizin</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Downloads</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s4">Recht</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Urteile</a></li>
+                <li><a href="#">Vorlagen</a></li>
+                <li><a href="#">Downloads</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s2">Community</a>
+            <ul class="submenu">
+                <li><a href="#">Aktuelles</a></li>
+                <li><a href="#">Handwerker</a></li>
+                <li><a href="#">Ausleihen</a></li>
+                <li><a href="#">Tauschen</a></li>
+                <li><a href="#">Hilfen</a></li>
+                <li><a href="#">Schwarzes Brett</a></li>
+            </ul>
+        </li>
+
+        <li class="active"><a href="#s2">Sonstiges</a>
+            <ul class="submenu">
+                <li><a href="#">Wisselblowing</a></li>
+                <li><a href="#">Vorschläge</a></li>
+                <li><a href="#">Schwarzes Brett</a></li>
+            </ul>
+        </li>
+
+
+        <li><a href="#">LogIn</a>
+            <ul class="submenu">
+                <li><a href="/users">Anmelden</a></li>
+                <li><a href="#">Gruppen</a></li>
+                <li><a href="#">Beitragen</a></li>
+                <li><a href="#">Spenden</a></li>
+                <li><a href="#">Infos anfordern</a></li>
+                <li><a href="#">Mitglied werden</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Sprache</a>
+            <ul class="submenu">
+                <li><a href="/users">Deutsch</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Français</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Polski</a></li>
+            </ul>
+        </li>
+--->
+
+<!--        <li class="Aurelius"><a href="https://www.aurelius-bird.de/">Aurelius Bird®</a></li> -->
+    </ul>
+
+    <div class="Block-Content">
+<!--   BLOCK MAIN--------------------------------->
+        {% block content %}
+        {% endblock %}
+<!--     -----------------------------------</a>-->
+    </div>
+
+</body>
+</html>
+
+
+
