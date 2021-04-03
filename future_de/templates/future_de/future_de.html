@@ -20,26 +20,46 @@
         <a href={{ SiteInfo.MainPage_Link_03 }} >{{ SiteInfo.MainPage_LinkName_03 }}</a>
         <a href={{ SiteInfo.MainPage_Link_04 }} >{{ SiteInfo.MainPage_LinkName_04 }}</a>
         <a href={{ SiteInfo.MainPage_Link_05 }} >{{ SiteInfo.MainPage_LinkName_05 }}</a>
+<!---
         <a href={{ SiteInfo.MainPage_Link_06 }} >{{ SiteInfo.MainPage_LinkName_06 }}</a>
         <a href={{ SiteInfo.MainPage_Link_07 }} >{{ SiteInfo.MainPage_LinkName_07 }}</a>
         <a href={{ SiteInfo.MainPage_Link_08 }} >{{ SiteInfo.MainPage_LinkName_08 }}</a>
         <a href={{ SiteInfo.MainPage_Link_09 }} >{{ SiteInfo.MainPage_LinkName_09 }}</a>
+--->
     </div>
 
     <div>
-        <h1>{{ SiteInfo.MainPage_Headline }}</h1>
-        <h2>{{ SiteInfo.MainPage_HeaderText }}</h2>
+        <a class = "Template-01-MainPage_Headline">{{ SiteInfo.MainPage_Headline }}</a>
+        <a class = "Template-01-MainPage_HeaderText" >{{ SiteInfo.MainPage_HeaderText }}</a>
     </div>
 
     <div class="Template-01-MainImage">
         <img src="{% static '/images/MainImage_Future-De_01.jpg' %}" class="Template-01-MainImage01">
     </div>
 
-    <div class="SideText">
-        <h2>Überschrift für Absatz #2 </h2>
-        <a>Hier fehlt noch der lange Text. Mal sehen, was passiert, wenn man hier einen relativ langen Text
-        eingibt. Und dieser dann rechts neben dem Bild unter der Übersch</a>
+    <div class="Template-01-SideText">
+        <div class="Template-01-SideTextSub">
+            <a class="Template-01-ParagraphHeader_01"> {{ SiteInfo.MainPage_ParagraphHeader_01 }} </a>
+            <a class="Template-01-ParagraphSubHeader_01"> {{ SiteInfo.MainPage_ParagraphSubHeader_01 }} </a>
+            <a class="Template-01-ParagraphText_01"> {{ SiteInfo.MainPage_ParagraphText_01 }} </a>
+            <a class="Template-01-ParagraphImage_01"> {{ SiteInfo.MainPage_ParagraphImage_01 }} </a>
+        </div>
+
+        <div class="Template-02-SideTextSub">
+            <a class="Template-02-ParagraphHeader_02"> {{ SiteInfo.MainPage_ParagraphHeader_02 }} </a>
+            <a class="Template-02-ParagraphSubHeader_02"> {{ SiteInfo.MainPage_ParagraphSubHeader_02 }} </a>
+            <a class="Template-02-ParagraphText_02"> {{ SiteInfo.MainPage_ParagraphText_02 }} </a>
+            <a class="Template-02-ParagraphImage_02"> {{ SiteInfo.MainPage_ParagraphImage_02 }} </a>
+        </div>
+
+        <div class="Template-03-SideTextSub">
+            <a class="Template-03-ParagraphHeader_03"> {{ SiteInfo.MainPage_ParagraphHeader_03 }} </a>
+            <a class="Template-03-ParagraphSubHeader_03"> {{ SiteInfo.MainPage_ParagraphSubHeader_03 }} </a>
+            <a class="Template-03-ParagraphText_03"> {{ SiteInfo.MainPage_ParagraphText_03 }} </a>
+            <a class="Template-03-ParagraphImage_03"> {{ SiteInfo.MainPage_ParagraphImage_03 }} </a>
+        </div>
     </div>
+
     {% endblock %}
 </body>
 </html>
