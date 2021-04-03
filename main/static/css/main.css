@@ -20,9 +20,15 @@
 }
 .Startpage-Media-Menu {
     position: relative;
-    top: 135px;
+    top: 130px;
     right: 20px;
     color: #002060;
+    font: "Liberation Sans Narrow";
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 16px;
+
 }
 
 /* ***************************** Menü ************************** */
@@ -327,18 +333,19 @@
     margin: 0px 0px 0px 30px;
     color: #404040;
     font: "Calibri";
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .Startpage-SiteMenu a {
     color: #192536;
     font: "Calibri";
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .Startpage-MainImage01 {
+    padding: 20px 0px 0px 0px;
     float: left;
-    width: 900px;
+    width: 850px;
     margin: 3px 10px 10px 30px;
 }
 
@@ -378,16 +385,24 @@
     padding: 10px;
     width: 800px;
 }
+.Preview-Info {
+    color: #B0A058;
+    background-color: #293546;
+}
+
 .Startpage-Side-Text {
     color: #404040;
-    box-sizing: border-box;
-    float: left;
+    margin: 325px 0px 0px 900px;
+    padding: 20px 0px 0px 80px;
     font: "Liberation Sans Narrow";
-    font-weight: 100;
-    letter-spacing: 1px;
+    font-weight: 350;
+    letter-spacing: 2px;
     text-align: left;
-    font-size: 20px;
-    margin: 340px 0px 0px 0px;
-    padding: 20px;
-    width: 800px;
+    font-size: 18px;
+    min-width: 400px;
+/*    position: fixed; */
+/*    box-sizing: border-box; */
+}
+.Startpage-Side-Text a{
+    font-weight: 400;
 }
