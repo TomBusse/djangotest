@@ -40,24 +40,24 @@
     z-order: 2;
 }
 .Main-Menu {
-    background: #999999;
+    background: #F0F0F5;
     height: 27px;
     position: fixed;
     top: 7px;
     right: 0px;
-    min-width: 607px;
+    min-width: 650px;
 }
 .Main-Menu li {
-    background: -moz-linear-gradient(#F3F3F3, #FAFAFC); /* #D9D9D9 , #E5E5EF */
-    background: -ms-linear-gradient(#F3F3F3, #FAFAFC);
+    background: -moz-linear-gradient(#F0F0F6, #C0C0CD); /* #D9D9D9 , #E5E5EF */
+    background: -ms-linear-gradient(#F0F0F6, #C0C0CD);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D9D9D9), color-stop(100%, #E5E5E5));
-    background: -webkit-linear-gradient(#F3F3F3, #FAFAFC);
-    background: -o-linear-gradient(#F3F3F3, #FAFAFC);
+    background: -webkit-linear-gradient(#F0F0F6, #C0C0CD);
+    background: -o-linear-gradient(#F0F0F6, #C0C0CD);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#E5E5EF');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#E5E5EF')";
-    background: linear-gradient(#F3F3F3, #FAFAFC);
-    border-bottom: 1px solid #F0F0F0;
-    border-top: 1px solid #F0F0F0;
+    background: linear-gradient(#F0F0F6, #C0C0CD);
+    border-bottom: 0px solid #F0F0F0;
+    border-top: 0px solid #F0F0F0;
     min-width: 125px;
 }
 .Main-Menu > li {
@@ -73,13 +73,13 @@
 }
 
 .Main-Menu a {
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    color: #303030;
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    color: #102030;
     display: block;
     /*font-family: 'Lucida Console';*/
     font-family: 'Calibri';
     font-size: 15px;
-    line-height: 30px;
+    line-height: 38px;
     padding: 0 10px;
     text-decoration: none;
     text-transform: none;
@@ -97,18 +97,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B0B0B3', endColorstr='#A0A0A3');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B0B0B3', endColorstr='#A0A0A3')";
     background: linear-gradient(#B0B0B3, #A0A0A3);
-    border-bottom: 1px solid #222222;
-    border-top: 1px solid #A0A0A3;
+    border-bottom: 0px solid #222222;
+    border-top: 0px solid #A0A0A3;
 }
 .Main-Menu li:hover > a {
     border-radius: 2px 0 0 0;
     /*border-left: 3px solid #C4302B;*/
-    border-left: 1px solid #A0A0A0;
-    border-right: 1px solid #A0A0A0;
-    border-top: 1px solid #A0A0A0;
-    border-bottom: 1px solid #A0A0A0;
+    border-left: 0px solid #A0A0A0; /* Das hier sind die Ränder der Top Level Menüs */
+    border-right: 0px solid #A0A0A0;
+    border-top: 0px solid #A0A0A0;
+    border-bottom: 0px solid #A0A0A0;
     /* color: #C0C0D0; */
-    color: #103070;
+    color: #204080; /* Das ist die Farbe für die Überschrift, wenn man mit der Maus drauf ist */
 }
 /* submenu styles */
 .submenu {
@@ -116,7 +116,7 @@
     max-height: 0;
     position: absolute;
     top: 100%;
-    z-index: 0;
+    z-index: 3;
     -webkit-perspective: 400px;
     -moz-perspective: 400px;
     -ms-perspective: 400px;
@@ -137,13 +137,13 @@
     transition: opacity .4s, transform .5s;
 }
 .Main-Menu .submenu li:hover a {
-    border-left: 3px solid #454545;
-    border-radius: 0;
-    color: #ffffff;
+    border-left: 7px solid #203060;
+    border-radius: 5; /* Das ist der Balken linnks bei den Drop Down Menüs */
+    color: #103F9F; /* Das ist die Farbe für die Drop Down Menüs */
 }
 .Main-Menu > li:hover .submenu, .Main-Menu > li:focus .submenu {
     max-height: 2000px;
-    z-index: 10;
+    z-index: 4;
 }
 .Main-Menu > li:hover .submenu li, .Main-Menu > li:focus .submenu li {
     opacity: 1;
@@ -304,7 +304,7 @@
     padding: 5px;
     margin: 45px 0px 0px 40px;   /* top right bottom left */
     transform: rotateY(180deg);
-    z-index: 2;
+    z-index: 1;
 }
 .Site-Logo-Flag {
     float: left;
@@ -314,7 +314,7 @@
     padding: 2px;
     margin: 35px 0px 0px 10px;
     transform: rotateY(180deg);
-    z-index: 2;
+    z-index: 1;
 }
 .Logo-MainHeadline {
     color: #505050;
@@ -325,7 +325,7 @@
     padding: 5px;
     margin: 35px 0px 0px 10px;
     background: none;
-    z-index: 2;
+    z-index: 1;
     height: 60px;
 }
 
@@ -405,4 +405,18 @@
 }
 .Startpage-Side-Text a{
     font-weight: 400;
+}
+
+.Imprint {
+    color: #404040;
+    margin: 10% 30px 0px 0px;
+    padding: 10px 0px 0px 10px;
+    font: "Liberation Sans Narrow";
+    font-weight: 250;
+    letter-spacing: 3px;
+    text-align: right;
+    font-size: 12px;
+    min-width: 400px;
+/*    position: fixed; */
+/*    box-sizing: border-box; */
 }
