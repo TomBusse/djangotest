@@ -27,5 +27,6 @@ urlpatterns = [
     path('', include('main.urls')),
     path('locations/create_location', include('locations.urls')),
     path('users/', include('users.urls')),
+    path('zukunft-deutschland/', include('future_de.urls')),
     #path('post/new/', views.newscreen, name='newscreen'),
 ]

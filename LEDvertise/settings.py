@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'locations',
     'users',
     'main',
+    'future_de',
 ]
 
 MIDDLEWARE = [

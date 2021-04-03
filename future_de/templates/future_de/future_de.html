@@ -1,0 +1,31 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zukunft-Deutschland</title>
+</head>
+<body class="Block-Body">
+
+    {% block content %}
+    <div class="Headline-Links">
+        <a href={{ SiteInfo.MainPage_Link_01 }} >{{ SiteInfo.MainPage_LinkName_01 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_02 }} >{{ SiteInfo.MainPage_LinkName_02 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_03 }} >{{ SiteInfo.MainPage_LinkName_03 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_04 }} >{{ SiteInfo.MainPage_LinkName_04 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_05 }} >{{ SiteInfo.MainPage_LinkName_05 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_06 }} >{{ SiteInfo.MainPage_LinkName_06 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_07 }} >{{ SiteInfo.MainPage_LinkName_07 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_08 }} >{{ SiteInfo.MainPage_LinkName_08 }}</a>
+        <a href={{ SiteInfo.MainPage_Link_09 }} >{{ SiteInfo.MainPage_LinkName_09 }}</a>
+    </div>
+
+    <div>
+        <h1>{{ SiteInfo.MainPage_Headline }}</h1>
+        <h2>{{ SiteInfo.MainPage_HeaderText }}</h2>
+    </div>
+    {% endblock %}
+</body>
+</html>
