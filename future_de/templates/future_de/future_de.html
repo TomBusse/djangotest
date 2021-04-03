@@ -10,6 +10,10 @@
 <body class="Block-Body">
 
     {% block content %}
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/future_de.css' %}">
+    {% endblock %}
+
     <div class="Headline-Links">
         <a href={{ SiteInfo.MainPage_Link_01 }} >{{ SiteInfo.MainPage_LinkName_01 }}</a>
         <a href={{ SiteInfo.MainPage_Link_02 }} >{{ SiteInfo.MainPage_LinkName_02 }}</a>
@@ -25,6 +29,16 @@
     <div>
         <h1>{{ SiteInfo.MainPage_Headline }}</h1>
         <h2>{{ SiteInfo.MainPage_HeaderText }}</h2>
+    </div>
+
+    <div class="Template-01-MainImage">
+        <img src="{% static '/images/MainImage_Future-De_01.jpg' %}" class="Template-01-MainImage01">
+    </div>
+
+    <div class="SideText">
+        <h2>Überschrift für Absatz #2 </h2>
+        <a>Hier fehlt noch der lange Text. Mal sehen, was passiert, wenn man hier einen relativ langen Text
+        eingibt. Und dieser dann rechts neben dem Bild unter der Übersch</a>
     </div>
     {% endblock %}
 </body>
