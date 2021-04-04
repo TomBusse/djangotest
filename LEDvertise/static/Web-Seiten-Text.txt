@@ -1,0 +1,40 @@
+2021-04-01 12:00:00
+
+Das zentrale Portal für Deutschland
+
+Ziel dieses Projektes ist es, die bereits aktiven Gruppen untereinander zu vernetzen. Damit sollen wiederkehrende Aufgaben zentralisiert und vereinfacht werden.
+
+Bild
+
+Anwälte für Aufklärung	https://www.afa.zone
+NOVOTECH®		https://www.novotech.de
+DIVI Intensivregister	https://www.intensivregister.de/#/aktuelle-lage/reports
+Robert Koch Institut	https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/
+Ecosia			https://www.ecosia.org/
+
+Zusammen sind wir stark
+Auf dem neusten Stand der Technik
+Wir brauchen Deine Hilfe
+
+Default
+
+Wir sind viele und wir sind gut
+Wir nutzen die gleiche Technologie wie die Tech-Giganten
+Unterstütze die Gemeinschaft. Jeder Tag zählt!
+
+Es gibt sehr viele Gruppen. Alle sind hoch motiviert und leisten sehr gute Arbeit.
+Aber viele, teils nebensächliche, Arbeiten werden wieder und wieder gemacht.
+Auch sind manche Ergebnisse nicht optimal, da die erforderlichen Fachkräfte fehlen.
+Unser Ansatz ist es, unsere Kräfte zu bündeln und dadurch bedeutend stärker zu werden.
+Warum sollten Ärzte juristische Dokumente ausarbeiten, während sich Anwälte medizinische Grundlagen drauf schaffen?
+Wir haben Spezialisten für alles. Lasst uns die Ressourcen effektiv nutzen!
+
+Dieses Portal ist nicht einfach eine weitere Web-Seite. Es basiert auf der neusten Technik, die auch die großen Tech-Giganten nutzen. Die gesamte Web-Site wird mit dem Django-Framework erstellt. Alle Daten sind in einer MariaDB-Datenbank abgelegt. Diese Technologie wird auch von YouTube® und vielen anderen verwendet.
+Webseiten und Beiträge kann dann jeder erstellen. Auch die Web-Seiten aus den Fachbereichen, so wiese diese Seite auch, kann dann jeder erstellen, indem er oder sie (mehr Geschlechter habe wir hier nicht) einfach nur die eigenen Inhalte in die Datenbank hochlädt.
+Zukünfig werden alle Daten aufgeteilt und verschlüsselt auf vielen tausenden von Geräten verschlüsselt archiviert, ähnlich wie man es vom BitCoin und der Block Chain kennt.
+
+Um ein Projekt wie dieses zu realisieren, benötigt es Unterstützung. Wir brauchen Entwickler und die müssen bezahlt werden. Wir, Yvonne und Tom, haben alles, was Du hier siehst bislang alleine umgesetzt. Um ein gigantisches Projekt wie „Zukunft-Deutschland.Info“ umzusetzen brauchen wird Unterstützung. Das ist einerseits die Mitarbeit jedes Einzelnen beim Erstellen der Inhalte auf diese Seite. Wenn es weiter gehen soll, dann benötigen wir aber auch Unterstützung bei der Weiterentwicklung. Dies kann entweder finanzielle Unterstützung, oder auch tatkräftige Hilfe von Profis sein.
+
+Diese Seite dient als Beispiel für die Umsetzung. Das Layout ist ein Template, also eine Vorlage.
+Der gesamte Text wird bei jedem Aufruf der Seite aus einer Datenbank geladen. Sind die Texte und Bilder vorhanden, dauert das Erstellen einer Seite wie dieser nur wenige Minuten und erfordert keinerlei Web-Design Kenntnisse.
+Zukünftig sollen die aktuellen Zahlen aus der Wirtschaft und der Medizin nachts automatisch aggregiert werden und auf der Startseite tagesaktuell abrufbar sein. Unter den Bereichen RECHT, MEDIZIN, WIRTSCHAFT und noch folgenden, können die jeweiligen Fachgruppen eigene Seiten betreiben. Zusätzliche Funktionen, wie Chat-Portale oder Handelsplattformen sollen folgen.
