@@ -41,26 +41,36 @@
             <p >{{ SiteInfo.MainPage_HeaderText }}</p>
         </div>
     </div>
-    <div class="Template-01-SideText">
-        <div class="Template-01-SideTextSub">
-            <a class="Template-01-ParagraphHeader_01"> {{ SiteInfo.MainPage_ParagraphHeader_01 }} </a>
-            <a class="Template-01-ParagraphSubHeader_01"> {{ SiteInfo.MainPage_ParagraphSubHeader_01 }} </a>
-            <a class="Template-01-ParagraphText_01"> {{ SiteInfo.MainPage_ParagraphText_01 }} </a>
-            <a class="Template-01-ParagraphImage_01"> {{ SiteInfo.MainPage_ParagraphImage_01 }} </a>
+    <div class="Template-SideText">
+        <div class="Template-SideTextSub">
+            <p class="Template-ParagraphHeader"> {{ SiteInfo.MainPage_ParagraphHeader_01 }} </p>
+            <p class="Template-ParagraphSubHeader"> {{ SiteInfo.MainPage_ParagraphSubHeader_01 }} </p>
+            <div>
+                <img src="{% static '/images/Pixabay_smart-4168483_1920.jpg' %}"  class="Template-ParagraphImage">
+            </div>
+            <p class="Template-ParagraphText"> {{ SiteInfo.MainPage_ParagraphText_01 }} </p>
+            <!---<p class="Template-ParagraphImage"> {{ SiteInfo.MainPage_ParagraphImage_01 }} <br> </p>--->
         </div>
 
-        <div class="Template-02-SideTextSub">
-            <a class="Template-02-ParagraphHeader_02"> {{ SiteInfo.MainPage_ParagraphHeader_02 }} </a>
-            <a class="Template-02-ParagraphSubHeader_02"> {{ SiteInfo.MainPage_ParagraphSubHeader_02 }} </a>
-            <a class="Template-02-ParagraphText_02"> {{ SiteInfo.MainPage_ParagraphText_02 }} </a>
-            <a class="Template-02-ParagraphImage_02"> {{ SiteInfo.MainPage_ParagraphImage_02 }} </a>
+        <div class="Template-SideTextSub">
+            <p class="Template-ParagraphHeader"> {{ SiteInfo.MainPage_ParagraphHeader_02 }} </p>
+            <p class="Template-ParagraphSubHeader"> {{ SiteInfo.MainPage_ParagraphSubHeader_02 }} </p>
+        <div>
+            <img src="{% static '/images/Pixabay_server-1235959_1920_dunkelblau.jpg' %}" class= "Template-ParagraphImage">
+        </div>
+            <p class="Template-ParagraphText"> {{ SiteInfo.MainPage_ParagraphText_02 }} </p>
+            <!--- <p class="Template-ParagraphImage_02"> {{ SiteInfo.MainPage_ParagraphImage_02 }} <br> </p> --->
         </div>
 
-        <div class="Template-03-SideTextSub">
-            <a class="Template-03-ParagraphHeader_03"> {{ SiteInfo.MainPage_ParagraphHeader_03 }} </a>
-            <a class="Template-03-ParagraphSubHeader_03"> {{ SiteInfo.MainPage_ParagraphSubHeader_03 }} </a>
-            <a class="Template-03-ParagraphText_03"> {{ SiteInfo.MainPage_ParagraphText_03 }} </a>
-            <a class="Template-03-ParagraphImage_03"> {{ SiteInfo.MainPage_ParagraphImage_03 }} </a>
+        <div class="Template-SideTextSub">
+            <p class="Template-ParagraphHeader"> {{ SiteInfo.MainPage_ParagraphHeader_03 }} </p>
+            <p class="Template-ParagraphSubHeader"> {{ SiteInfo.MainPage_ParagraphSubHeader_03 }} </p>
+            <div>
+                <img src="{% static '/images/Pixabay_network-3148727_1920.jpg' %}"  class="Template-ParagraphImage">
+            </div>
+            <p class="Template-ParagraphText"> {{ SiteInfo.MainPage_ParagraphText_03 }} </p>
+            <!--- <p class="Template-ParagraphImage_03"> {{ SiteInfo.MainPage_ParagraphImage_03 }} <br></p> --->
+
         </div>
     </div>
 

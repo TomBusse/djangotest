@@ -54,20 +54,60 @@
     letter-spacing: 2px;
     text-align: left;
     font-size: 18px;
+    padding: 0px 5px 0px 10px;
 }
-.Template-01-SideText {
+.Template-SideText {
     color: #192536;
     font: "Liberation Sans Narrow";
     float: left;
-    font-weight: 400;
-    letter-spacing: 2px;
     text-align: left;
-    font-size: 30px;
-    position: absolute;
-    margin: 32px 0px 0px 550px;
-    padding: 5px;
-    max-width: 48%;
-    min-width: 30%;
+    margin: 440px 10px 10px 20px;
+    padding: 50px;
+    max-width: 100%;
+    min-width: 75%;
     min-height: 80px;
     z-index: 1;
+    /*background: blue;*/
+}
+.Template-SideTextSub {
+    max-width: 95%;
+    padding: 35px 0px 0px 0px;
+    /*background: green;*/
+}
+
+.Template-ParagraphHeader {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0px 30px 0px 0px;
+    /*background: red;*/
+}
+
+.Template-ParagraphSubHeader {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin: 0px 150px 0px 5px;
+    /*background: yellow;*/
+}
+.Template-ParagraphText {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 10px 5px 20px;
+    max-width: 70%;
+    min-width: 45%;
+    /*background: cyan;*/
+}
+
+.Template-ParagraphImage {
+    position: relative;
+    width: 280px;
+    float: right;
+    margin: 10px 100px 0px 10px;
+    padding: 10px 10px 10px 10px;
+    /*background: magenta;*/
 }
