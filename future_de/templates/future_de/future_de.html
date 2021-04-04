@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{% static 'css/future_de.css' %}">
     {% endblock %}
 
-    <div class="Template-01-Headline-Links">
+    <div class="Template-Headline-Links">
         <a href={{ SiteInfo.MainPage_Link_01 }} >&nbsp{{ SiteInfo.MainPage_LinkName_01 }}&nbsp</a>
         <a href={{ SiteInfo.MainPage_Link_02 }} >&nbsp{{ SiteInfo.MainPage_LinkName_02 }}&nbsp</a>
         <a href={{ SiteInfo.MainPage_Link_03 }} >&nbsp{{ SiteInfo.MainPage_LinkName_03 }}&nbsp</a>
@@ -27,20 +27,25 @@
         <a href={{ SiteInfo.MainPage_Link_09 }} >{{ SiteInfo.MainPage_LinkName_09 }}</a>
 --->
     </div>
-
-    <div class="Template-01-MainImage">
-        <img src="{% static '/images/MainImage_Future-De_01.jpg' %}" class="Template-01-MainImage01">
+    <div class="Template-MainImage">
+        <img src="{% static '/images/MainImage_Future-De_01.jpg' %}" class="Template-MainImage01">
     </div>
 
-    <div class = "Template-01-MainPage_Header">
-        <div class = "Template-01-MainPage_Headline">
+    <div class = "Template-MainPage_Header">
+        <div class = "Template-MainPage_Headline">
             <p>{{ SiteInfo.MainPage_Headline }}</p>
         </div>
 
-        <div class = "Template-01-MainPage_HeaderText">
+        <div class = "Template-MainPage_HeaderText">
             <p >{{ SiteInfo.MainPage_HeaderText }}</p>
         </div>
     </div>
+
+    <div class = "Template-MainPage_GreyInfo">
+        <p>{{ SiteInfo.MainPage_GreyInfoText }}</p>
+    </div>
+
+
     <div class="Template-SideText">
         <div class="Template-SideTextSub">
             <p class="Template-ParagraphHeader"> {{ SiteInfo.MainPage_ParagraphHeader_01 }} </p>
@@ -73,7 +78,6 @@
 
         </div>
     </div>
-
     {% endblock %}
 </body>
 </html>

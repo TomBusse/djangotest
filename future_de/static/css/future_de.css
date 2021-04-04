@@ -1,4 +1,4 @@
-.Template-01-Headline-Links {
+.Template-Headline-Links {
     float: right;
     padding: 0px 20px 0px 0px;
     word-spacing: 3px;
@@ -7,7 +7,7 @@
     font-size: 14px;
 }
 
-.Template-01-MainImage01 {
+.Template-MainImage01 {
     position: absolute;
     padding: 15px 0px 0px 0px;
     float: left;
@@ -17,7 +17,7 @@
     border-radius: 5px;
 }
 
-.Template-01-MainPage_Header {
+.Template-MainPage_Header {
     color: #192536;
     border-color: #192536;
     background-color: #F0F0F8;
@@ -33,17 +33,17 @@
     position: absolute;
     margin: 32px 0px 0px 550px;
     padding: 5px;
-    max-width: 48%;
-    min-width: 30%;
+    max-width: 58%;
+    min-width: 55%;
     min-height: 80px;
     z-index: 1;
 }
 
-.Template-01-MainPage_Headline {
+.Template-MainPage_Headline {
 
 }
 
-.Template-01-MainPage_HeaderText {
+.Template-MainPage_HeaderText {
     color: #F0F0F8;
     background-color: #192536;
     border: 4px solid #192536;
@@ -56,12 +56,27 @@
     font-size: 18px;
     padding: 0px 5px 0px 10px;
 }
+
+/* ********************* Graue Info Schrift *********************** */
+.Template-MainPage_GreyInfo {
+    color: #404045;
+    float: right;
+    font: "Liberation Sans Narrow";
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 18px;
+    margin: 258px 0px 0px 650px;
+    padding: 0px 5px 0px 10px;
+    /*background: red;*/
+}
+
 .Template-SideText {
     color: #192536;
     font: "Liberation Sans Narrow";
     float: left;
     text-align: left;
-    margin: 440px 10px 10px 20px;
+    margin: 20px 10px 10px 20px;
     padding: 50px;
     max-width: 100%;
     min-width: 75%;
@@ -105,7 +120,7 @@
 
 .Template-ParagraphImage {
     position: relative;
-    width: 280px;
+    width: 350px;
     float: right;
     margin: 10px 100px 0px 10px;
     padding: 10px 10px 10px 10px;
