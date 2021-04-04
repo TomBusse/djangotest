@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="{% static 'css/future_de.css' %}">
     {% endblock %}
 
-    <div class="Headline-Links">
-        <a href={{ SiteInfo.MainPage_Link_01 }} >{{ SiteInfo.MainPage_LinkName_01 }}</a>
-        <a href={{ SiteInfo.MainPage_Link_02 }} >{{ SiteInfo.MainPage_LinkName_02 }}</a>
-        <a href={{ SiteInfo.MainPage_Link_03 }} >{{ SiteInfo.MainPage_LinkName_03 }}</a>
-        <a href={{ SiteInfo.MainPage_Link_04 }} >{{ SiteInfo.MainPage_LinkName_04 }}</a>
-        <a href={{ SiteInfo.MainPage_Link_05 }} >{{ SiteInfo.MainPage_LinkName_05 }}</a>
+    <div class="Template-01-Headline-Links">
+        <a href={{ SiteInfo.MainPage_Link_01 }} >&nbsp{{ SiteInfo.MainPage_LinkName_01 }}&nbsp</a>
+        <a href={{ SiteInfo.MainPage_Link_02 }} >&nbsp{{ SiteInfo.MainPage_LinkName_02 }}&nbsp</a>
+        <a href={{ SiteInfo.MainPage_Link_03 }} >&nbsp{{ SiteInfo.MainPage_LinkName_03 }}&nbsp</a>
+        <a href={{ SiteInfo.MainPage_Link_04 }} >&nbsp{{ SiteInfo.MainPage_LinkName_04 }}&nbsp</a>
+        <a href={{ SiteInfo.MainPage_Link_05 }} >&nbsp{{ SiteInfo.MainPage_LinkName_05 }}&nbsp</a>
 <!---
         <a href={{ SiteInfo.MainPage_Link_06 }} >{{ SiteInfo.MainPage_LinkName_06 }}</a>
         <a href={{ SiteInfo.MainPage_Link_07 }} >{{ SiteInfo.MainPage_LinkName_07 }}</a>
@@ -28,15 +28,19 @@
 --->
     </div>
 
-    <div>
-        <a class = "Template-01-MainPage_Headline">{{ SiteInfo.MainPage_Headline }}</a>
-        <a class = "Template-01-MainPage_HeaderText" >{{ SiteInfo.MainPage_HeaderText }}</a>
-    </div>
-
     <div class="Template-01-MainImage">
         <img src="{% static '/images/MainImage_Future-De_01.jpg' %}" class="Template-01-MainImage01">
     </div>
 
+    <div class = "Template-01-MainPage_Header">
+        <div class = "Template-01-MainPage_Headline">
+            <p>{{ SiteInfo.MainPage_Headline }}</p>
+        </div>
+
+        <div class = "Template-01-MainPage_HeaderText">
+            <p >{{ SiteInfo.MainPage_HeaderText }}</p>
+        </div>
+    </div>
     <div class="Template-01-SideText">
         <div class="Template-01-SideTextSub">
             <a class="Template-01-ParagraphHeader_01"> {{ SiteInfo.MainPage_ParagraphHeader_01 }} </a>

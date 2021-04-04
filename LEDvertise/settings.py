@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'LEDvertise.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LEDvertise',
+        'NAME': 'Zukunft_Deutschland',
         'USER': 'admin',
         'PASSWORD': 'Busse!01',
         'HOST': '127.0.0.1',
