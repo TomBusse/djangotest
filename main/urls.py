@@ -7,4 +7,5 @@ app_name = 'main'
 urlpatterns = [
     path('', views.main_view, name='main_view'),
     path('main/', views.main_view, name='main_view'),
+    path('imprint/', views.imprint_view, name='imprint_view'),
 ]
